@@ -1,0 +1,1179 @@
+== Info: About to connect() to localhost port 8000 (#0)
+== Info:   Trying 127.0.0.1... == Info: connected
+=> Send header, 237 bytes (0xed)
+0000: GET /pdfrequester/download/?pdffile=9374c31a-996d-49c6-a4fe-7202
+0040: f92b0089.pdf HTTP/1.1
+0057: User-Agent: curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 Ope
+0097: nSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3
+00c8: Host: localhost:8000
+00de: Accept: */*
+00eb: 
+== Info: HTTP 1.0, assume close after body
+<= Recv header, 36 bytes (0x24)
+0000: HTTP/1.0 500 INTERNAL SERVER ERROR
+<= Recv header, 37 bytes (0x25)
+0000: Date: Fri, 05 Apr 2013 00:56:08 GMT
+<= Recv header, 37 bytes (0x25)
+0000: Server: WSGIServer/0.1 Python/2.7.3
+<= Recv header, 25 bytes (0x19)
+0000: Content-Type: text/html
+<= Recv header, 2 bytes (0x2)
+0000: 
+<= Recv data, 8192 bytes (0x2000)
+0000: .<!DOCTYPE html>.<html lang="en">.<head>.  <meta http-equiv="con
+0040: tent-type" content="text/html; charset=utf-8">.  <meta name="rob
+0080: ots" content="NONE,NOARCHIVE">.  <title>ValueError at /pdfreques
+00c0: ter/download/</title>.  <style type="text/css">.    html * { pad
+0100: ding:0; margin:0; }.    body * { padding:10px 20px; }.    body *
+0140:  * { padding:0; }.    body { font:small sans-serif; }.    body>d
+0180: iv { border-bottom:1px solid #ddd; }.    h1 { font-weight:normal
+01c0: ; }.    h2 { margin-bottom:.8em; }.    h2 span { font-size:80%; 
+0200: color:#666; font-weight:normal; }.    h3 { margin:1em 0 .5em 0; 
+0240: }.    h4 { margin:0 0 .5em 0; font-weight: normal; }.    code, p
+0280: re { font-size: 100%; white-space: pre-wrap; }.    table { borde
+02c0: r:1px solid #ccc; border-collapse: collapse; width:100%; backgro
+0300: und:white; }.    tbody td, tbody th { vertical-align:top; paddin
+0340: g:2px 3px; }.    thead th { padding:1px 6px 1px 3px; background:
+0380: #fefefe; text-align:left; font-weight:normal; font-size:11px; bo
+03c0: rder:1px solid #ddd; }.    tbody th { width:12em; text-align:rig
+0400: ht; color:#666; padding-right:.5em; }.    table.vars { margin:5p
+0440: x 0 2px 40px; }.    table.vars td, table.req td { font-family:mo
+0480: nospace; }.    table td.code { width:100%; }.    table td.code p
+04c0: re { overflow:hidden; }.    table.source th { color:#666; }.    
+0500: table.source td { font-family:monospace; white-space:pre; border
+0540: -bottom:1px solid #eee; }.    ul.traceback { list-style-type:non
+0580: e; color: #222; }.    ul.traceback li.frame { padding-bottom:1em
+05c0: ; color:#666; }.    ul.traceback li.user { background-color:#e0e
+0600: 0e0; color:#000 }.    div.context { padding:10px 0; overflow:hid
+0640: den; }.    div.context ol { padding-left:30px; margin:0 10px; li
+0680: st-style-position: inside; }.    div.context ol li { font-family
+06c0: :monospace; white-space:pre; color:#777; cursor:pointer; }.    d
+0700: iv.context ol li pre { display:inline; }.    div.context ol.cont
+0740: ext-line li { color:#505050; background-color:#dfdfdf; }.    div
+0780: .context ol.context-line li span { position:absolute; right:32px
+07c0: ; }.    .user div.context ol.context-line li { background-color:
+0800: #bbb; color:#000; }.    .user div.context ol li { color:#666; }.
+0840:     div.commands { margin-left: 40px; }.    div.commands a { col
+0880: or:#555; text-decoration:none; }.    .user div.commands a { colo
+08c0: r: black; }.    #summary { background: #ffc; }.    #summary h2 {
+0900:  font-weight: normal; color: #666; }.    #explanation { backgrou
+0940: nd:#eee; }.    #template, #template-not-exist { background:#f6f6
+0980: f6; }.    #template-not-exist ul { margin: 0 0 0 20px; }.    #un
+09c0: icode-hint { background:#eee; }.    #traceback { background:#eee
+0a00: ; }.    #requestinfo { background:#f6f6f6; padding-left:120px; }
+0a40: .    #summary table { border:none; background:transparent; }.   
+0a80:  #requestinfo h2, #requestinfo h3 { position:relative; margin-le
+0ac0: ft:-100px; }.    #requestinfo h3 { margin-bottom:-1em; }.    .er
+0b00: ror { background: #ffc; }.    .specific { color:#cc3300; font-we
+0b40: ight:bold; }.    h2 span.commands { font-size:.7em;}.    span.co
+0b80: mmands a:link {color:#5E5694;}.    pre.exception_value { font-fa
+0bc0: mily: sans-serif; color: #666; font-size: 1.5em; margin: 10px 0 
+0c00: 10px 0; }.  </style>.  .  <script type="text/javascript">.  //<!
+0c40: --.    function getElementsByClassName(oElm, strTagName, strClas
+0c80: sName){.        // Written by Jonathan Snook, http://www.snook.c
+0cc0: a/jon; Add-ons by Robert Nyman, http://www.robertnyman.com.     
+0d00:    var arrElements = (strTagName == "*" && document.all)? docume
+0d40: nt.all :.        oElm.getElementsByTagName(strTagName);.        
+0d80: var arrReturnElements = new Array();.        strClassName = strC
+0dc0: lassName.replace(/\-/g, "\-");.        var oRegExp = new RegExp(
+0e00: "(^|\s)" + strClassName + "(\s|$)");.        var oElement;.     
+0e40:    for(var i=0; i<arrElements.length; i++){.            oElement
+0e80:  = arrElements[i];.            if(oRegExp.test(oElement.classNam
+0ec0: e)){.                arrReturnElements.push(oElement);.         
+0f00:    }.        }.        return (arrReturnElements).    }.    func
+0f40: tion hideAll(elems) {.      for (var e = 0; e < elems.length; e+
+0f80: +) {.        elems[e].style.display = 'none';.      }.    }.    
+0fc0: window.onload = function() {.      hideAll(getElementsByClassNam
+1000: e(document, 'table', 'vars'));.      hideAll(getElementsByClassN
+1040: ame(document, 'ol', 'pre-context'));.      hideAll(getElementsBy
+1080: ClassName(document, 'ol', 'post-context'));.      hideAll(getEle
+10c0: mentsByClassName(document, 'div', 'pastebin'));.    }.    functi
+1100: on toggle() {.      for (var i = 0; i < arguments.length; i++) {
+1140: .        var e = document.getElementById(arguments[i]);.        
+1180: if (e) {.          e.style.display = e.style.display == 'none' ?
+11c0:  'block' : 'none';.        }.      }.      return false;.    }. 
+1200:    function varToggle(link, id) {.      toggle('v' + id);.      
+1240: var s = link.getElementsByTagName('span')[0];.      var uarr = S
+1280: tring.fromCharCode(0x25b6);.      var darr = String.fromCharCode
+12c0: (0x25bc);.      s.innerHTML = s.innerHTML == uarr ? darr : uarr;
+1300: .      return false;.    }.    function switchPastebinFriendly(l
+1340: ink) {.      s1 = "Switch to copy-and-paste view";.      s2 = "S
+1380: witch back to interactive view";.      link.innerHTML = link.inn
+13c0: erHTML == s1 ? s2 : s1;.      toggle('browserTraceback', 'pasteb
+1400: inTraceback');.      return false;.    }.    //-->.  </script>. 
+1440:  .</head>.<body>.<div id="summary">.  <h1>ValueError at /pdfrequ
+1480: ester/download/</h1>.  <pre class="exception_value">unknown url 
+14c0: type: 9374c31a-996d-49c6-a4fe-7202f92b0089.pdf</pre>.  <table cl
+1500: ass="meta">..    <tr>.      <th>Request Method:</th>.      <td>G
+1540: ET</td>.    </tr>.    <tr>.      <th>Request URL:</th>.      <td
+1580: >http://localhost:8000/pdfrequester/download/?pdffile=9374c31a-9
+15c0: 96d-49c6-a4fe-7202f92b0089.pdf</td>.    </tr>..    <tr>.      <t
+1600: h>Django Version:</th>.      <td>1.5.1</td>.    </tr>..    <tr>.
+1640:       <th>Exception Type:</th>.      <td>ValueError</td>.    </t
+1680: r>...    <tr>.      <th>Exception Value:</th>.      <td><pre>unk
+16c0: nown url type: 9374c31a-996d-49c6-a4fe-7202f92b0089.pdf</pre></t
+1700: d>.    </tr>...    <tr>.      <th>Exception Location:</th>.     
+1740:  <td>/usr/lib/python2.7/urllib2.py in get_type, line 254</td>.  
+1780:   </tr>..    <tr>.      <th>Python Executable:</th>.      <td>/h
+17c0: ome/rajesh/env1/bin/python</td>.    </tr>.    <tr>.      <th>Pyt
+1800: hon Version:</th>.      <td>2.7.3</td>.    </tr>.    <tr>.      
+1840: <th>Python Path:</th>.      <td><pre>[&#39;/home/rajesh/env1/bin
+1880: /pdfconverter&#39;,. &#39;/home/rajesh/env1/local/lib/python2.7/
+18c0: site-packages/distribute-0.6.24-py2.7.egg&#39;,. &#39;/home/raje
+1900: sh/env1/local/lib/python2.7/site-packages/pip-1.1-py2.7.egg&#39;
+1940: ,. &#39;/home/rajesh/env1/lib/python2.7/site-packages/distribute
+1980: -0.6.24-py2.7.egg&#39;,. &#39;/home/rajesh/env1/lib/python2.7/si
+19c0: te-packages/pip-1.1-py2.7.egg&#39;,. &#39;/home/rajesh/env1/bin/
+1a00: pdfconverter/SaasposeApp&#39;,. &#39;/home/rajesh/env1/lib/pytho
+1a40: n2.7&#39;,. &#39;/home/rajesh/env1/lib/python2.7/plat-linux2&#39
+1a80: ;,. &#39;/home/rajesh/env1/lib/python2.7/lib-tk&#39;,. &#39;/hom
+1ac0: e/rajesh/env1/lib/python2.7/lib-old&#39;,. &#39;/home/rajesh/env
+1b00: 1/lib/python2.7/lib-dynload&#39;,. &#39;/usr/lib/python2.7&#39;,
+1b40: . &#39;/usr/lib/python2.7/plat-linux2&#39;,. &#39;/usr/lib/pytho
+1b80: n2.7/lib-tk&#39;,. &#39;/home/rajesh/env1/local/lib/python2.7/si
+1bc0: te-packages&#39;,. &#39;/home/rajesh/env1/lib/python2.7/site-pac
+1c00: kages&#39;]</pre></td>.    </tr>.    <tr>.      <th>Server time:
+1c40: </th>.      <td>Thu, 4 Apr 2013 19:56:08 -0500</td>.    </tr>.  
+1c80: </table>.</div>.....<div id="traceback">.  <h2>Traceback <span c
+1cc0: lass="commands"><a href="#" onclick="return switchPastebinFriend
+1d00: ly(this);">Switch to copy-and-paste view</a></span></h2>.  .  <d
+1d40: iv id="browserTraceback">.    <ul class="traceback">.      .    
+1d80:     <li class="frame django">.          <code>/home/rajesh/env1/
+1dc0: local/lib/python2.7/site-packages/django/core/handlers/base.py</
+1e00: code> in <code>get_response</code>..          .            <div 
+1e40: class="context" id="c139960905884952">.              .          
+1e80:       <ol start="108" class="pre-context" id="pre139960905884952
+1ec0: "><li onclick="toggle('pre139960905884952', 'post139960905884952
+1f00: ')"><pre>                    for middleware_method in self._view
+1f40: _middleware:</pre></li><li onclick="toggle('pre139960905884952',
+1f80:  'post139960905884952')"><pre>                        response =
+1fc0:  middleware_method(request, callback, callback_args, callback_kw
+<= Recv data, 8192 bytes (0x2000)
+0000: args)</pre></li><li onclick="toggle('pre139960905884952', 'post1
+0040: 39960905884952')"><pre>                        if response:</pre
+0080: ></li><li onclick="toggle('pre139960905884952', 'post13996090588
+00c0: 4952')"><pre>                            break</pre></li><li onc
+0100: lick="toggle('pre139960905884952', 'post139960905884952')"><pre>
+0140: </pre></li><li onclick="toggle('pre139960905884952', 'post139960
+0180: 905884952')"><pre>                if response is None:</pre></li
+01c0: ><li onclick="toggle('pre139960905884952', 'post139960905884952'
+0200: )"><pre>                    try:</pre></li></ol>.              .
+0240:               <ol start="115" class="context-line"><li onclick="
+0280: toggle('pre139960905884952', 'post139960905884952')"><pre>      
+02c0:                   response = callback(request, *callback_args, *
+0300: *callback_kwargs)</pre> <span>...</span></li></ol>.             
+0340:  .                <ol start='116' class="post-context" id="post1
+0380: 39960905884952"><li onclick="toggle('pre139960905884952', 'post1
+03c0: 39960905884952')"><pre>                    except Exception as e
+0400: :</pre></li><li onclick="toggle('pre139960905884952', 'post13996
+0440: 0905884952')"><pre>                        # If the view raised 
+0480: an exception, run it through exception</pre></li><li onclick="to
+04c0: ggle('pre139960905884952', 'post139960905884952')"><pre>        
+0500:                 # middleware, and if the exception middleware re
+0540: turns a</pre></li><li onclick="toggle('pre139960905884952', 'pos
+0580: t139960905884952')"><pre>                        # response, use
+05c0:  that. Otherwise, reraise the exception.</pre></li><li onclick="
+0600: toggle('pre139960905884952', 'post139960905884952')"><pre>      
+0640:                   for middleware_method in self._exception_middl
+0680: eware:</pre></li><li onclick="toggle('pre139960905884952', 'post
+06c0: 139960905884952')"><pre>                            response = m
+0700: iddleware_method(request, e)</pre></li></ol>.              .    
+0740:         </div>.          ..          .            <div class="co
+0780: mmands">.                .                    <a href="#" onclic
+07c0: k="return varToggle(this, '139960905884952')"><span>&#x25b6;</sp
+0800: an> Local vars</a>.                .            </div>.         
+0840:    <table class="vars" id="v139960905884952">.              <the
+0880: ad>.                <tr>.                  <th>Variable</th>.   
+08c0:                <th>Value</th>.                </tr>.            
+0900:   </thead>.              <tbody>.                .              
+0940:     <tr>.                    <td>e</td>.                    <td 
+0980: class="code"><pre>ValueError(u&#39;unknown url type: 9374c31a-99
+09c0: 6d-49c6-a4fe-7202f92b0089.pdf&#39;,)</pre></td>.                
+0a00:   </tr>.                .                  <tr>.                
+0a40:     <td>callback_args</td>.                    <td class="code">
+0a80: <pre>()</pre></td>.                  </tr>.                .    
+0ac0:               <tr>.                    <td>resolver_match</td>. 
+0b00:                    <td class="code"><pre>ResolverMatch(func=&lt;
+0b40: function download at 0x7f4b30034758&gt;, args=(), kwargs={}, url
+0b80: _name=&#39;download&#39;, app_name=&#39;None&#39;, namespace=&#3
+0bc0: 9;&#39;)</pre></td>.                  </tr>.                .   
+0c00:                <tr>.                    <td>middleware_method</t
+0c40: d>.                    <td class="code"><pre>&lt;bound method Cs
+0c80: rfViewMiddleware.process_view of &lt;django.middleware.csrf.Csrf
+0cc0: ViewMiddleware object at 0x7f4b30022310&gt;&gt;</pre></td>.     
+0d00:              </tr>.                .                  <tr>.     
+0d40:                <td>self</td>.                    <td class="code
+0d80: "><pre>&lt;django.core.handlers.wsgi.WSGIHandler object at 0x7f4
+0dc0: b3fef8d10&gt;</pre></td>.                  </tr>.               
+0e00:  .                  <tr>.                    <td>request</td>.  
+0e40:                   <td class="code"><pre>&quot;&lt;WSGIRequest\np
+0e80: ath:/pdfrequester/download/,\nGET:&lt;QueryDict: {u&#39;pdffile&
+0ec0: #39;: [u&#39;9374c31a-996d-49c6-a4fe-7202f92b0089.pdf&#39;]}&gt;
+0f00: ,\nPOST:&lt;QueryDict: {}&gt;,\nCOOKIES:{},\nMETA:{&#39;COLORTER
+0f40: M&#39;: &#39;gnome-terminal&#39;,\n &#39;COMPIZ_CONFIG_PROFILE&#
+0f80: 39;: &#39;ubuntu&#39;,\n &#39;CONTENT_LENGTH&#39;: &#39;&#39;,\n
+0fc0:  &#39;CONTENT_TYPE&#39;: &#39;text/plain&#39;,\n u&#39;CSRF_COOK
+1000: IE&#39;: u&#39;mNBkmFnRQ1IGK9DdaLkCyFl1F3PB1bpx&#39;,\n &#39;DBU
+1040: S_SESSION_BUS_ADDRESS&#39;: &#39;unix:abstract=/tmp/dbus-WBOvp2y
+1080: 0hl,guid=8301606c3e3531b601578a6f00000155&#39;,\n &#39;DEFAULTS_
+10c0: PATH&#39;: &#39;/usr/share/gconf/ubuntu.default.path&#39;,\n &#3
+1100: 9;DESKTOP_SESSION&#39;: &#39;ubuntu&#39;,\n &#39;DISPLAY&#39;: &
+1140: #39;:0&#39;,\n &#39;DJANGO_SETTINGS_MODULE&#39;: &#39;pdfconvert
+1180: er.settings&#39;,\n &#39;GATEWAY_INTERFACE&#39;: &#39;CGI/1.1&#3
+11c0: 9;,\n &#39;GDMSESSION&#39;: &#39;ubuntu&#39;,\n &#39;GNOME_DESKT
+1200: OP_SESSION_ID&#39;: &#39;this-is-deprecated&#39;,\n &#39;GNOME_K
+1240: EYRING_CONTROL&#39;: &#39;/tmp/keyring-kh5fSe&#39;,\n &#39;GNOME
+1280: _KEYRING_PID&#39;: &#39;9896&#39;,\n &#39;GPG_AGENT_INFO&#39;: &
+12c0: #39;/tmp/keyring-kh5fSe/gpg:0:1&#39;,\n &#39;HOME&#39;: &#39;/ho
+1300: me/rajesh&#39;,\n &#39;HTTP_ACCEPT&#39;: &#39;*/*&#39;,\n &#39;H
+1340: TTP_HOST&#39;: &#39;localhost:8000&#39;,\n &#39;HTTP_USER_AGENT&
+1380: #39;: &#39;curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 Open
+13c0: SSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3&#39;,\n &#39;LANG
+1400: &#39;: &#39;en_US.UTF-8&#39;,\n &#39;LESSCLOSE&#39;: &#39;/usr/b
+1440: in/lesspipe %s %s&#39;,\n &#39;LESSOPEN&#39;: &#39;| /usr/bin/le
+1480: sspipe %s&#39;,\n &#39;LOGNAME&#39;: &#39;rajesh&#39;,\n &#39;LS
+14c0: _COLORS&#39;: &#39;rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;3
+1500: 5:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43
+1540: :ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=
+1580: 01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;
+15c0: 31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=0
+1600: 1;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.
+1640: tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=
+1680: 01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;3
+16c0: 1:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.
+1700: gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=
+1740: 01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;
+1780: 35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:
+17c0: *.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.
+1800: ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=
+1840: 01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;3
+1880: 5:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.d
+18c0: l=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01
+1900: ;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:
+1940: *.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.m
+1980: p3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00
+19c0: ;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:&#39;,\n &#39;MANDATORY
+1a00: _PATH&#39;: &#39;/usr/share/gconf/ubuntu.mandatory.path&#39;,\n 
+1a40: &#39;OLDPWD&#39;: &#39;/home/rajesh/env1/bin/dopdf&#39;,\n &#39;
+1a80: PATH&#39;: &#39;/home/rajesh/env1/bin:/usr/lib/lightdm/lightdm:/
+1ac0: usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr
+1b00: /games&#39;,\n &#39;PATH_INFO&#39;: u&#39;/pdfrequester/download
+1b40: /&#39;,\n &#39;PS1&#39;: &#39;(env1)\\\\[\\\\e]0;\\\\u@\\\\h: \\
+1b80: \\w\\\\a\\\\]${debian_chroot:+($debian_chroot)}\\\\u@\\\\h:\\\\w
+1bc0: \\\\$ &#39;,\n &#39;PWD&#39;: &#39;/home/rajesh/env1/bin/pdfconv
+1c00: erter&#39;,\n &#39;PYTHONPATH&#39;: &#39;/home/rajesh/env1/bin/p
+1c40: dfconverter/SaasposeApp&#39;,\n &#39;QUERY_STRING&#39;: &#39;pdf
+1c80: file=9374c31a-996d-49c6-a4fe-7202f92b0089.pdf&#39;,\n &#39;REMOT
+1cc0: E_ADDR&#39;: &#39;127.0.0.1&#39;,\n &#39;REMOTE_HOST&#39;: &#39;
+1d00: &#39;,\n &#39;REQUEST_METHOD&#39;: &#39;GET&#39;,\n &#39;RUN_MAI
+1d40: N&#39;: &#39;true&#39;,\n &#39;SCRIPT_NAME&#39;: u&#39;&#39;,\n 
+1d80: &#39;SERVER_NAME&#39;: &#39;localhost&#39;,\n &#39;SERVER_PORT&#
+1dc0: 39;: &#39;8000&#39;,\n &#39;SERVER_PROTOCOL&#39;: &#39;HTTP/1.1&
+1e00: #39;,\n &#39;SERVER_SOFTWARE&#39;: &#39;WSGIServer/0.1 Python/2.
+1e40: 7.3&#39;,\n &#39;SESSION_MANAGER&#39;: &#39;local/ubuntu:@/tmp/.
+1e80: ICE-unix/9907,unix/ubuntu:/tmp/.ICE-unix/9907&#39;,\n &#39;SHELL
+1ec0: &#39;: &#39;/bin/bash&#39;,\n &#39;SHLVL&#39;: &#39;1&#39;,\n &#
+1f00: 39;SSH_AGENT_PID&#39;: &#39;9942&#39;,\n &#39;SSH_AUTH_SOCK&#39;
+1f40: : &#39;/tmp/keyring-kh5fSe/ssh&#39;,\n &#39;TERM&#39;: &#39;xter
+1f80: m&#39;,\n &#39;TZ&#39;: &#39;America/Chicago&#39;,\n &#39;UBUNTU
+1fc0: _MENUPROXY&#39;: &#39;libappmenu.so&#39;,\n &#39;USER&#39;: &#39
+<= Recv data, 8192 bytes (0x2000)
+0000: ;rajesh&#39;,\n &#39;VIRTUAL_ENV&#39;: &#39;/home/rajesh/env1&#3
+0040: 9;,\n &#39;WINDOWID&#39;: &#39;54559619&#39;,\n &#39;XAUTHORITY&
+0080: #39;: &#39;/home/rajesh/.Xauthority&#39;,\n &#39;XDG_CONFIG_DIRS
+00c0: &#39;: &#39;/etc/xdg/xdg-ubuntu:/etc/xdg&#39;,\n &#39;XDG_CURREN
+0100: T_DESKTOP&#39;: &#39;Unity&#39;,\n &#39;XDG_DATA_DIRS&#39;: &#39
+0140: ;/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share
+0180: /&#39;,\n &#39;XDG_SEAT_PATH&#39;: &#39;/org/freedesktop/Display
+01c0: Manager/Seat0&#39;,\n &#39;XDG_SESSION_COOKIE&#39;: &#39;cdb8589
+0200: db75be82da924b4a600000006-1365011550.948337-1747186371&#39;,\n &
+0240: #39;XDG_SESSION_PATH&#39;: &#39;/org/freedesktop/DisplayManager/
+0280: Session0&#39;,\n &#39;_&#39;: &#39;/home/rajesh/env1/bin/python&
+02c0: #39;,\n &#39;wsgi.errors&#39;: &lt;open file &#39;&lt;stderr&gt;
+0300: &#39;, mode &#39;w&#39; at 0x7f4b3ffab270&gt;,\n &#39;wsgi.file_
+0340: wrapper&#39;: &lt;class wsgiref.util.FileWrapper at 0x3028a78&gt
+0380: ;,\n &#39;wsgi.input&#39;: &lt;socket._fileobject object at 0x7f
+03c0: 4b300242d0&gt;,\n &#39;wsgi.multiprocess&#39;: False,\n &#39;wsg
+0400: i.multithread&#39;: True,\n &#39;wsgi.run_once&#39;: False,\n &#
+0440: 39;wsgi.url_scheme&#39;: &#39;http&#39;,\n &#39;wsgi.version&#39
+0480: ;: (1, 0)}&gt;&quot;</pre></td>.                  </tr>.        
+04c0:         .                  <tr>.                    <td>callback
+0500: </td>.                    <td class="code"><pre>&lt;function dow
+0540: nload at 0x7f4b30034758&gt;</pre></td>.                  </tr>. 
+0580:                .                  <tr>.                    <td>r
+05c0: esolver</td>.                    <td class="code"><pre>&lt;Regex
+0600: URLResolver &#39;pdfconverter.urls&#39; (None:None) ^/&gt;</pre>
+0640: </td>.                  </tr>.                .                 
+0680:  <tr>.                    <td>callback_kwargs</td>.             
+06c0:        <td class="code"><pre>{}</pre></td>.                  </t
+0700: r>.                .                  <tr>.                    <
+0740: td>response</td>.                    <td class="code"><pre>None<
+0780: /pre></td>.                  </tr>.                .            
+07c0:       <tr>.                    <td>urlconf</td>.                
+0800:     <td class="code"><pre>&#39;pdfconverter.urls&#39;</pre></td>
+0840: .                  </tr>.                .              </tbody>
+0880: .            </table>.          .        </li>.      .        <l
+08c0: i class="frame user">.          <code>/home/rajesh/env1/bin/pdfc
+0900: onverter/pdfrequester/views.py</code> in <code>download</code>..
+0940:           .            <div class="context" id="c139960905884880
+0980: ">.              .                <ol start="25" class="pre-cont
+09c0: ext" id="pre139960905884880"><li onclick="toggle('pre13996090588
+0a00: 4880', 'post139960905884880')"><pre>                openUrl.info
+0a40: ()[&#39;Content-Disposition&#39;].split(&#39;;&#39;)))</pre></li
+0a80: ><li onclick="toggle('pre139960905884880', 'post139960905884880'
+0ac0: )"><pre>            if &#39;filename&#39; in cd:</pre></li><li o
+0b00: nclick="toggle('pre139960905884880', 'post139960905884880')"><pr
+0b40: e>                filename = cd[&#39;filename&#39;].strip(&quot;
+0b80: \&quot;&#39;&quot;)</pre></li><li onclick="toggle('pre1399609058
+0bc0: 84880', 'post139960905884880')"><pre>                if filename
+0c00: : return filename</pre></li><li onclick="toggle('pre139960905884
+0c40: 880', 'post139960905884880')"><pre>        # if no filename was 
+0c80: found above, parse it out of the final URL.</pre></li><li onclic
+0cc0: k="toggle('pre139960905884880', 'post139960905884880')"><pre>   
+0d00:      return os.path.basename(urlparse.urlsplit(openUrl.url)[2])<
+0d40: /pre></li><li onclick="toggle('pre139960905884880', 'post1399609
+0d80: 05884880')"><pre></pre></li></ol>.              .              <
+0dc0: ol start="32" class="context-line"><li onclick="toggle('pre13996
+0e00: 0905884880', 'post139960905884880')"><pre>    r = urllib2.urlope
+0e40: n(urllib2.Request(url))</pre> <span>...</span></li></ol>.       
+0e80:        .                <ol start='33' class="post-context" id="
+0ec0: post139960905884880"><li onclick="toggle('pre139960905884880', '
+0f00: post139960905884880')"><pre>    try:</pre></li><li onclick="togg
+0f40: le('pre139960905884880', 'post139960905884880')"><pre>        #f
+0f80: ileName = fileName or getFileName(url,r)</pre></li><li onclick="
+0fc0: toggle('pre139960905884880', 'post139960905884880')"><pre>      
+1000:   fileName = getFileName(url,r)</pre></li><li onclick="toggle('p
+1040: re139960905884880', 'post139960905884880')"><pre>        with op
+1080: en(fileName, &#39;wb&#39;) as f:</pre></li><li onclick="toggle('
+10c0: pre139960905884880', 'post139960905884880')"><pre>..for chunk in
+1100:  f.chunks():</pre></li><li onclick="toggle('pre139960905884880',
+1140:  'post139960905884880')"><pre>            ..f.write(chunk)</pre>
+1180: </li></ol>.              .            </div>.          ..       
+11c0:    .            <div class="commands">.                .        
+1200:             <a href="#" onclick="return varToggle(this, '1399609
+1240: 05884880')"><span>&#x25b6;</span> Local vars</a>.               
+1280:  .            </div>.            <table class="vars" id="v139960
+12c0: 905884880">.              <thead>.                <tr>.         
+1300:          <th>Variable</th>.                  <th>Value</th>.    
+1340:             </tr>.              </thead>.              <tbody>. 
+1380:                .                  <tr>.                    <td>g
+13c0: etFileName</td>.                    <td class="code"><pre>&lt;fu
+1400: nction getFileName at 0x7f4b300dfaa0&gt;</pre></td>.            
+1440:       </tr>.                .                  <tr>.            
+1480:         <td>url</td>.                    <td class="code"><pre>u
+14c0: &#39;9374c31a-996d-49c6-a4fe-7202f92b0089.pdf&#39;</pre></td>.  
+1500:                 </tr>.                .                  <tr>.  
+1540:                   <td>request</td>.                    <td class
+1580: ="code"><pre>&quot;&lt;WSGIRequest\npath:/pdfrequester/download/
+15c0: ,\nGET:&lt;QueryDict: {u&#39;pdffile&#39;: [u&#39;9374c31a-996d-
+1600: 49c6-a4fe-7202f92b0089.pdf&#39;]}&gt;,\nPOST:&lt;QueryDict: {}&g
+1640: t;,\nCOOKIES:{},\nMETA:{&#39;COLORTERM&#39;: &#39;gnome-terminal
+1680: &#39;,\n &#39;COMPIZ_CONFIG_PROFILE&#39;: &#39;ubuntu&#39;,\n &#
+16c0: 39;CONTENT_LENGTH&#39;: &#39;&#39;,\n &#39;CONTENT_TYPE&#39;: &#
+1700: 39;text/plain&#39;,\n u&#39;CSRF_COOKIE&#39;: u&#39;mNBkmFnRQ1IG
+1740: K9DdaLkCyFl1F3PB1bpx&#39;,\n &#39;DBUS_SESSION_BUS_ADDRESS&#39;:
+1780:  &#39;unix:abstract=/tmp/dbus-WBOvp2y0hl,guid=8301606c3e3531b601
+17c0: 578a6f00000155&#39;,\n &#39;DEFAULTS_PATH&#39;: &#39;/usr/share/
+1800: gconf/ubuntu.default.path&#39;,\n &#39;DESKTOP_SESSION&#39;: &#3
+1840: 9;ubuntu&#39;,\n &#39;DISPLAY&#39;: &#39;:0&#39;,\n &#39;DJANGO_
+1880: SETTINGS_MODULE&#39;: &#39;pdfconverter.settings&#39;,\n &#39;GA
+18c0: TEWAY_INTERFACE&#39;: &#39;CGI/1.1&#39;,\n &#39;GDMSESSION&#39;:
+1900:  &#39;ubuntu&#39;,\n &#39;GNOME_DESKTOP_SESSION_ID&#39;: &#39;th
+1940: is-is-deprecated&#39;,\n &#39;GNOME_KEYRING_CONTROL&#39;: &#39;/
+1980: tmp/keyring-kh5fSe&#39;,\n &#39;GNOME_KEYRING_PID&#39;: &#39;989
+19c0: 6&#39;,\n &#39;GPG_AGENT_INFO&#39;: &#39;/tmp/keyring-kh5fSe/gpg
+1a00: :0:1&#39;,\n &#39;HOME&#39;: &#39;/home/rajesh&#39;,\n &#39;HTTP
+1a40: _ACCEPT&#39;: &#39;*/*&#39;,\n &#39;HTTP_HOST&#39;: &#39;localho
+1a80: st:8000&#39;,\n &#39;HTTP_USER_AGENT&#39;: &#39;curl/7.22.0 (x86
+1ac0: _64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libi
+1b00: dn/1.23 librtmp/2.3&#39;,\n &#39;LANG&#39;: &#39;en_US.UTF-8&#39
+1b40: ;,\n &#39;LESSCLOSE&#39;: &#39;/usr/bin/lesspipe %s %s&#39;,\n &
+1b80: #39;LESSOPEN&#39;: &#39;| /usr/bin/lesspipe %s&#39;,\n &#39;LOGN
+1bc0: AME&#39;: &#39;rajesh&#39;,\n &#39;LS_COLORS&#39;: &#39;rs=0:di=
+1c00: 01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=4
+1c40: 0;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42
+1c80: :st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;
+1cc0: 31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:
+1d00: *.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:
+1d40: *.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb
+1d80: =01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;
+1dc0: 31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*
+1e00: .rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm
+1e40: =01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;
+1e80: 35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35
+1ec0: :*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.
+1f00: m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v
+1f40: =01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;
+1f80: 35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*
+1fc0: .fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=0
+<= Recv data, 16384 bytes (0x4000)
+0000: 1;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35
+0040: :*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m
+0080: id=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=
+00c0: 00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36
+0100: :*.xspf=00;36:&#39;,\n &#39;MANDATORY_PATH&#39;: &#39;/usr/share
+0140: /gconf/ubuntu.mandatory.path&#39;,\n &#39;OLDPWD&#39;: &#39;/hom
+0180: e/rajesh/env1/bin/dopdf&#39;,\n &#39;PATH&#39;: &#39;/home/rajes
+01c0: h/env1/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/b
+0200: in:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games&#39;,\n &#39;PATH_IN
+0240: FO&#39;: u&#39;/pdfrequester/download/&#39;,\n &#39;PS1&#39;: &#
+0280: 39;(env1)\\\\[\\\\e]0;\\\\u@\\\\h: \\\\w\\\\a\\\\]${debian_chroo
+02c0: t:+($debian_chroot)}\\\\u@\\\\h:\\\\w\\\\$ &#39;,\n &#39;PWD&#39
+0300: ;: &#39;/home/rajesh/env1/bin/pdfconverter&#39;,\n &#39;PYTHONPA
+0340: TH&#39;: &#39;/home/rajesh/env1/bin/pdfconverter/SaasposeApp&#39
+0380: ;,\n &#39;QUERY_STRING&#39;: &#39;pdffile=9374c31a-996d-49c6-a4f
+03c0: e-7202f92b0089.pdf&#39;,\n &#39;REMOTE_ADDR&#39;: &#39;127.0.0.1
+0400: &#39;,\n &#39;REMOTE_HOST&#39;: &#39;&#39;,\n &#39;REQUEST_METHO
+0440: D&#39;: &#39;GET&#39;,\n &#39;RUN_MAIN&#39;: &#39;true&#39;,\n &
+0480: #39;SCRIPT_NAME&#39;: u&#39;&#39;,\n &#39;SERVER_NAME&#39;: &#39
+04c0: ;localhost&#39;,\n &#39;SERVER_PORT&#39;: &#39;8000&#39;,\n &#39
+0500: ;SERVER_PROTOCOL&#39;: &#39;HTTP/1.1&#39;,\n &#39;SERVER_SOFTWAR
+0540: E&#39;: &#39;WSGIServer/0.1 Python/2.7.3&#39;,\n &#39;SESSION_MA
+0580: NAGER&#39;: &#39;local/ubuntu:@/tmp/.ICE-unix/9907,unix/ubuntu:/
+05c0: tmp/.ICE-unix/9907&#39;,\n &#39;SHELL&#39;: &#39;/bin/bash&#39;,
+0600: \n &#39;SHLVL&#39;: &#39;1&#39;,\n &#39;SSH_AGENT_PID&#39;: &#39
+0640: ;9942&#39;,\n &#39;SSH_AUTH_SOCK&#39;: &#39;/tmp/keyring-kh5fSe/
+0680: ssh&#39;,\n &#39;TERM&#39;: &#39;xterm&#39;,\n &#39;TZ&#39;: &#3
+06c0: 9;America/Chicago&#39;,\n &#39;UBUNTU_MENUPROXY&#39;: &#39;libap
+0700: pmenu.so&#39;,\n &#39;USER&#39;: &#39;rajesh&#39;,\n &#39;VIRTUA
+0740: L_ENV&#39;: &#39;/home/rajesh/env1&#39;,\n &#39;WINDOWID&#39;: &
+0780: #39;54559619&#39;,\n &#39;XAUTHORITY&#39;: &#39;/home/rajesh/.Xa
+07c0: uthority&#39;,\n &#39;XDG_CONFIG_DIRS&#39;: &#39;/etc/xdg/xdg-ub
+0800: untu:/etc/xdg&#39;,\n &#39;XDG_CURRENT_DESKTOP&#39;: &#39;Unity&
+0840: #39;,\n &#39;XDG_DATA_DIRS&#39;: &#39;/usr/share/ubuntu:/usr/sha
+0880: re/gnome:/usr/local/share/:/usr/share/&#39;,\n &#39;XDG_SEAT_PAT
+08c0: H&#39;: &#39;/org/freedesktop/DisplayManager/Seat0&#39;,\n &#39;
+0900: XDG_SESSION_COOKIE&#39;: &#39;cdb8589db75be82da924b4a600000006-1
+0940: 365011550.948337-1747186371&#39;,\n &#39;XDG_SESSION_PATH&#39;: 
+0980: &#39;/org/freedesktop/DisplayManager/Session0&#39;,\n &#39;_&#39
+09c0: ;: &#39;/home/rajesh/env1/bin/python&#39;,\n &#39;wsgi.errors&#3
+0a00: 9;: &lt;open file &#39;&lt;stderr&gt;&#39;, mode &#39;w&#39; at 
+0a40: 0x7f4b3ffab270&gt;,\n &#39;wsgi.file_wrapper&#39;: &lt;class wsg
+0a80: iref.util.FileWrapper at 0x3028a78&gt;,\n &#39;wsgi.input&#39;: 
+0ac0: &lt;socket._fileobject object at 0x7f4b300242d0&gt;,\n &#39;wsgi
+0b00: .multiprocess&#39;: False,\n &#39;wsgi.multithread&#39;: True,\n
+0b40:  &#39;wsgi.run_once&#39;: False,\n &#39;wsgi.url_scheme&#39;: &#
+0b80: 39;http&#39;,\n &#39;wsgi.version&#39;: (1, 0)}&gt;&quot;</pre><
+0bc0: /td>.                  </tr>.                .              </tb
+0c00: ody>.            </table>.          .        </li>.      .      
+0c40:   <li class="frame user">.          <code>/usr/lib/python2.7/url
+0c80: lib2.py</code> in <code>urlopen</code>..          .            <
+0cc0: div class="context" id="c139960905884232">.              .      
+0d00:           <ol start="119" class="pre-context" id="pre13996090588
+0d40: 4232"><li onclick="toggle('pre139960905884232', 'post13996090588
+0d80: 4232')"><pre>__version__ = sys.version[:3]</pre></li><li onclick
+0dc0: ="toggle('pre139960905884232', 'post139960905884232')"><pre></pr
+0e00: e></li><li onclick="toggle('pre139960905884232', 'post1399609058
+0e40: 84232')"><pre>_opener = None</pre></li><li onclick="toggle('pre1
+0e80: 39960905884232', 'post139960905884232')"><pre>def urlopen(url, d
+0ec0: ata=None, timeout=socket._GLOBAL_DEFAULT_TIMEOUT):</pre></li><li
+0f00:  onclick="toggle('pre139960905884232', 'post139960905884232')"><
+0f40: pre>    global _opener</pre></li><li onclick="toggle('pre1399609
+0f80: 05884232', 'post139960905884232')"><pre>    if _opener is None:<
+0fc0: /pre></li><li onclick="toggle('pre139960905884232', 'post1399609
+1000: 05884232')"><pre>        _opener = build_opener()</pre></li></ol
+1040: >.              .              <ol start="126" class="context-li
+1080: ne"><li onclick="toggle('pre139960905884232', 'post1399609058842
+10c0: 32')"><pre>    return _opener.open(url, data, timeout)</pre> <sp
+1100: an>...</span></li></ol>.              .                <ol start
+1140: ='127' class="post-context" id="post139960905884232"><li onclick
+1180: ="toggle('pre139960905884232', 'post139960905884232')"><pre></pr
+11c0: e></li><li onclick="toggle('pre139960905884232', 'post1399609058
+1200: 84232')"><pre>def install_opener(opener):</pre></li><li onclick=
+1240: "toggle('pre139960905884232', 'post139960905884232')"><pre>    g
+1280: lobal _opener</pre></li><li onclick="toggle('pre139960905884232'
+12c0: , 'post139960905884232')"><pre>    _opener = opener</pre></li><l
+1300: i onclick="toggle('pre139960905884232', 'post139960905884232')">
+1340: <pre></pre></li><li onclick="toggle('pre139960905884232', 'post1
+1380: 39960905884232')"><pre># do these error classes make sense?</pre
+13c0: ></li></ol>.              .            </div>.          ..      
+1400:     .            <div class="commands">.                .       
+1440:              <a href="#" onclick="return varToggle(this, '139960
+1480: 905884232')"><span>&#x25b6;</span> Local vars</a>.              
+14c0:   .            </div>.            <table class="vars" id="v13996
+1500: 0905884232">.              <thead>.                <tr>.        
+1540:           <th>Variable</th>.                  <th>Value</th>.   
+1580:              </tr>.              </thead>.              <tbody>.
+15c0:                 .                  <tr>.                    <td>
+1600: url</td>.                    <td class="code"><pre>&lt;urllib2.R
+1640: equest instance at 0x7f4b384072d8&gt;</pre></td>.               
+1680:    </tr>.                .                  <tr>.               
+16c0:      <td>data</td>.                    <td class="code"><pre>Non
+1700: e</pre></td>.                  </tr>.                .          
+1740:         <tr>.                    <td>timeout</td>.              
+1780:       <td class="code"><pre>&lt;object object at 0x7f4b3feff0c0&
+17c0: gt;</pre></td>.                  </tr>.                .        
+1800:       </tbody>.            </table>.          .        </li>.   
+1840:    .        <li class="frame user">.          <code>/usr/lib/pyt
+1880: hon2.7/urllib2.py</code> in <code>open</code>..          .      
+18c0:       <div class="context" id="c139960905884664">.              
+1900: .                <ol start="385" class="pre-context" id="pre1399
+1940: 60905884664"><li onclick="toggle('pre139960905884664', 'post1399
+1980: 60905884664')"><pre>            req = Request(fullurl, data)</pr
+19c0: e></li><li onclick="toggle('pre139960905884664', 'post1399609058
+1a00: 84664')"><pre>        else:</pre></li><li onclick="toggle('pre13
+1a40: 9960905884664', 'post139960905884664')"><pre>            req = f
+1a80: ullurl</pre></li><li onclick="toggle('pre139960905884664', 'post
+1ac0: 139960905884664')"><pre>            if data is not None:</pre></
+1b00: li><li onclick="toggle('pre139960905884664', 'post13996090588466
+1b40: 4')"><pre>                req.add_data(data)</pre></li><li oncli
+1b80: ck="toggle('pre139960905884664', 'post139960905884664')"><pre></
+1bc0: pre></li><li onclick="toggle('pre139960905884664', 'post13996090
+1c00: 5884664')"><pre>        req.timeout = timeout</pre></li></ol>.  
+1c40:             .              <ol start="392" class="context-line">
+1c80: <li onclick="toggle('pre139960905884664', 'post139960905884664')
+1cc0: "><pre>        protocol = req.get_type()</pre> <span>...</span><
+1d00: /li></ol>.              .                <ol start='393' class="
+1d40: post-context" id="post139960905884664"><li onclick="toggle('pre1
+1d80: 39960905884664', 'post139960905884664')"><pre></pre></li><li onc
+1dc0: lick="toggle('pre139960905884664', 'post139960905884664')"><pre>
+1e00:         # pre-process request</pre></li><li onclick="toggle('pre
+1e40: 139960905884664', 'post139960905884664')"><pre>        meth_name
+1e80:  = protocol+&quot;_request&quot;</pre></li><li onclick="toggle('
+1ec0: pre139960905884664', 'post139960905884664')"><pre>        for pr
+1f00: ocessor in self.process_request.get(protocol, []):</pre></li><li
+1f40:  onclick="toggle('pre139960905884664', 'post139960905884664')"><
+1f80: pre>            meth = getattr(processor, meth_name)</pre></li><
+1fc0: li onclick="toggle('pre139960905884664', 'post139960905884664')"
+2000: ><pre>            req = meth(req)</pre></li></ol>.              
+2040: .            </div>.          ..          .            <div clas
+2080: s="commands">.                .                    <a href="#" o
+20c0: nclick="return varToggle(this, '139960905884664')"><span>&#x25b6
+2100: ;</span> Local vars</a>.                .            </div>.    
+2140:         <table class="vars" id="v139960905884664">.             
+2180:  <thead>.                <tr>.                  <th>Variable</th
+21c0: >.                  <th>Value</th>.                </tr>.       
+2200:        </thead>.              <tbody>.                .         
+2240:          <tr>.                    <td>self</td>.                
+2280:     <td class="code"><pre>&lt;urllib2.OpenerDirector instance at
+22c0:  0x7f4b3013c7a0&gt;</pre></td>.                  </tr>.         
+2300:        .                  <tr>.                    <td>req</td>.
+2340:                     <td class="code"><pre>&lt;urllib2.Request in
+2380: stance at 0x7f4b384072d8&gt;</pre></td>.                  </tr>.
+23c0:                 .                  <tr>.                    <td>
+2400: data</td>.                    <td class="code"><pre>None</pre></
+2440: td>.                  </tr>.                .                  <
+2480: tr>.                    <td>fullurl</td>.                    <td
+24c0:  class="code"><pre>&lt;urllib2.Request instance at 0x7f4b384072d
+2500: 8&gt;</pre></td>.                  </tr>.                .      
+2540:             <tr>.                    <td>timeout</td>.          
+2580:           <td class="code"><pre>&lt;object object at 0x7f4b3feff
+25c0: 0c0&gt;</pre></td>.                  </tr>.                .    
+2600:           </tbody>.            </table>.          .        </li>
+2640: .      .        <li class="frame user">.          <code>/usr/lib
+2680: /python2.7/urllib2.py</code> in <code>get_type</code>..         
+26c0:  .            <div class="context" id="c139960905884376">.      
+2700:         .                <ol start="247" class="pre-context" id=
+2740: "pre139960905884376"><li onclick="toggle('pre139960905884376', '
+2780: post139960905884376')"><pre>        else:</pre></li><li onclick=
+27c0: "toggle('pre139960905884376', 'post139960905884376')"><pre>     
+2800:        return self.__original</pre></li><li onclick="toggle('pre
+2840: 139960905884376', 'post139960905884376')"><pre></pre></li><li on
+2880: click="toggle('pre139960905884376', 'post139960905884376')"><pre
+28c0: >    def get_type(self):</pre></li><li onclick="toggle('pre13996
+2900: 0905884376', 'post139960905884376')"><pre>        if self.type i
+2940: s None:</pre></li><li onclick="toggle('pre139960905884376', 'pos
+2980: t139960905884376')"><pre>            self.type, self.__r_type = 
+29c0: splittype(self.__original)</pre></li><li onclick="toggle('pre139
+2a00: 960905884376', 'post139960905884376')"><pre>            if self.
+2a40: type is None:</pre></li></ol>.              .              <ol s
+2a80: tart="254" class="context-line"><li onclick="toggle('pre13996090
+2ac0: 5884376', 'post139960905884376')"><pre>                raise Val
+2b00: ueError, &quot;unknown url type: %s&quot; % self.__original</pre
+2b40: > <span>...</span></li></ol>.              .                <ol 
+2b80: start='255' class="post-context" id="post139960905884376"><li on
+2bc0: click="toggle('pre139960905884376', 'post139960905884376')"><pre
+2c00: >        return self.type</pre></li><li onclick="toggle('pre1399
+2c40: 60905884376', 'post139960905884376')"><pre></pre></li><li onclic
+2c80: k="toggle('pre139960905884376', 'post139960905884376')"><pre>   
+2cc0:  def get_host(self):</pre></li><li onclick="toggle('pre139960905
+2d00: 884376', 'post139960905884376')"><pre>        if self.host is No
+2d40: ne:</pre></li><li onclick="toggle('pre139960905884376', 'post139
+2d80: 960905884376')"><pre>            self.host, self.__r_host = spli
+2dc0: thost(self.__r_type)</pre></li><li onclick="toggle('pre139960905
+2e00: 884376', 'post139960905884376')"><pre>            if self.host:<
+2e40: /pre></li></ol>.              .            </div>.          ..  
+2e80:         .            <div class="commands">.                .   
+2ec0:                  <a href="#" onclick="return varToggle(this, '13
+2f00: 9960905884376')"><span>&#x25b6;</span> Local vars</a>.          
+2f40:       .            </div>.            <table class="vars" id="v1
+2f80: 39960905884376">.              <thead>.                <tr>.    
+2fc0:               <th>Variable</th>.                  <th>Value</th>
+3000: .                </tr>.              </thead>.              <tbo
+3040: dy>.                .                  <tr>.                    
+3080: <td>self</td>.                    <td class="code"><pre>&lt;urll
+30c0: ib2.Request instance at 0x7f4b384072d8&gt;</pre></td>.          
+3100:         </tr>.                .              </tbody>.          
+3140:   </table>.          .        </li>.      .    </ul>.  </div>.  
+3180: .  <form action="http://dpaste.com/" name="pasteform" id="pastef
+31c0: orm" method="post">..  <div id="pastebinTraceback" class="pasteb
+3200: in">.    <input type="hidden" name="language" value="PythonConso
+3240: le">.    <input type="hidden" name="title" value="ValueError at 
+3280: /pdfrequester/download/">.    <input type="hidden" name="source"
+32c0:  value="Django Dpaste Agent">.    <input type="hidden" name="pos
+3300: ter" value="Django">.    <textarea name="content" id="traceback_
+3340: area" cols="140" rows="25">.Environment:...Request Method: GET.R
+3380: equest URL: http://localhost:8000/pdfrequester/download/?pdffile
+33c0: =9374c31a-996d-49c6-a4fe-7202f92b0089.pdf..Django Version: 1.5.1
+3400: .Python Version: 2.7.3.Installed Applications:.(&#39;django.cont
+3440: rib.auth&#39;,. &#39;django.contrib.contenttypes&#39;,. &#39;dja
+3480: ngo.contrib.sessions&#39;,. &#39;django.contrib.sites&#39;,. &#3
+34c0: 9;django.contrib.messages&#39;,. &#39;django.contrib.staticfiles
+3500: &#39;,. &#39;htmltopdf&#39;,. &#39;pdfrequester&#39;,. &#39;Saas
+3540: poseApp&#39;).Installed Middleware:.(&#39;django.middleware.comm
+3580: on.CommonMiddleware&#39;,. &#39;django.contrib.sessions.middlewa
+35c0: re.SessionMiddleware&#39;,. &#39;django.middleware.csrf.CsrfView
+3600: Middleware&#39;,. &#39;django.contrib.auth.middleware.Authentica
+3640: tionMiddleware&#39;,. &#39;django.contrib.messages.middleware.Me
+3680: ssageMiddleware&#39;)...Traceback:.File "/home/rajesh/env1/local
+36c0: /lib/python2.7/site-packages/django/core/handlers/base.py" in ge
+3700: t_response.  115.                         response = callback(re
+3740: quest, *callback_args, **callback_kwargs).File "/home/rajesh/env
+3780: 1/bin/pdfconverter/pdfrequester/views.py" in download.  32.     
+37c0: r = urllib2.urlopen(urllib2.Request(url)).File "/usr/lib/python2
+3800: .7/urllib2.py" in urlopen.  126.     return _opener.open(url, da
+3840: ta, timeout).File "/usr/lib/python2.7/urllib2.py" in open.  392.
+3880:          protocol = req.get_type().File "/usr/lib/python2.7/urll
+38c0: ib2.py" in get_type.  254.                 raise ValueError, &qu
+3900: ot;unknown url type: %s&quot; % self.__original..Exception Type:
+3940:  ValueError at /pdfrequester/download/.Exception Value: unknown 
+3980: url type: 9374c31a-996d-49c6-a4fe-7202f92b0089.pdf.</textarea>. 
+39c0:  <br><br>.  <input type="submit" value="Share this traceback on 
+3a00: a public Web site">.  </div>.</form>.</div>....<div id="requesti
+3a40: nfo">.  <h2>Request information</h2>...  <h3 id="get-info">GET</
+3a80: h3>.  .    <table class="req">.      <thead>.        <tr>.      
+3ac0:     <th>Variable</th>.          <th>Value</th>.        </tr>.   
+3b00:    </thead>.      <tbody>.        .          <tr>.            <t
+3b40: d>pdffile</td>.            <td class="code"><pre>u&#39;9374c31a-
+3b80: 996d-49c6-a4fe-7202f92b0089.pdf&#39;</pre></td>.          </tr>.
+3bc0:         .      </tbody>.    </table>.  ..  <h3 id="post-info">PO
+3c00: ST</h3>.  .    <p>No POST data</p>.  .  <h3 id="files-info">FILE
+3c40: S</h3>.  .    <p>No FILES data</p>.  ...  <h3 id="cookie-info">C
+3c80: OOKIES</h3>.  .    <p>No cookie data</p>.  ..  <h3 id="meta-info
+3cc0: ">META</h3>.  <table class="req">.    <thead>.      <tr>.       
+3d00:  <th>Variable</th>.        <th>Value</th>.      </tr>.    </thea
+3d40: d>.    <tbody>.      .        <tr>.          <td>wsgi.version</t
+3d80: d>.          <td class="code"><pre>(1, 0)</pre></td>.        </t
+3dc0: r>.      .        <tr>.          <td>wsgi.multiprocess</td>.    
+3e00:       <td class="code"><pre>False</pre></td>.        </tr>.     
+3e40:  .        <tr>.          <td>RUN_MAIN</td>.          <td class="
+3e80: code"><pre>&#39;true&#39;</pre></td>.        </tr>.      .      
+3ec0:   <tr>.          <td>GNOME_DESKTOP_SESSION_ID</td>.          <td
+3f00:  class="code"><pre>&#39;this-is-deprecated&#39;</pre></td>.     
+3f40:    </tr>.      .        <tr>.          <td>SERVER_PROTOCOL</td>.
+3f80:           <td class="code"><pre>&#39;HTTP/1.1&#39;</pre></td>.  
+3fc0:       </tr>.      .        <tr>.          <td>SERVER_SOFTWARE</t
+<= Recv data, 16384 bytes (0x4000)
+0000: d>.          <td class="code"><pre>&#39;WSGIServer/0.1 Python/2.
+0040: 7.3&#39;</pre></td>.        </tr>.      .        <tr>.          
+0080: <td>SCRIPT_NAME</td>.          <td class="code"><pre>u&#39;&#39;
+00c0: </pre></td>.        </tr>.      .        <tr>.          <td>LESS
+0100: OPEN</td>.          <td class="code"><pre>&#39;| /usr/bin/lesspi
+0140: pe %s&#39;</pre></td>.        </tr>.      .        <tr>.        
+0180:   <td>REQUEST_METHOD</td>.          <td class="code"><pre>&#39;G
+01c0: ET&#39;</pre></td>.        </tr>.      .        <tr>.          <
+0200: td>LOGNAME</td>.          <td class="code"><pre>&#39;rajesh&#39;
+0240: </pre></td>.        </tr>.      .        <tr>.          <td>USER
+0280: </td>.          <td class="code"><pre>&#39;rajesh&#39;</pre></td
+02c0: >.        </tr>.      .        <tr>.          <td>PATH</td>.    
+0300:       <td class="code"><pre>&#39;/home/rajesh/env1/bin:/usr/lib/
+0340: lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bi
+0380: n:/sbin:/bin:/usr/games&#39;</pre></td>.        </tr>.      .   
+03c0:      <tr>.          <td>QUERY_STRING</td>.          <td class="c
+0400: ode"><pre>&#39;pdffile=9374c31a-996d-49c6-a4fe-7202f92b0089.pdf&
+0440: #39;</pre></td>.        </tr>.      .        <tr>.          <td>
+0480: GNOME_KEYRING_CONTROL</td>.          <td class="code"><pre>&#39;
+04c0: /tmp/keyring-kh5fSe&#39;</pre></td>.        </tr>.      .       
+0500:  <tr>.          <td>PS1</td>.          <td class="code"><pre>&#3
+0540: 9;(env1)\\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chr
+0580: oot)}\\u@\\h:\\w\\$ &#39;</pre></td>.        </tr>.      .      
+05c0:   <tr>.          <td>DISPLAY</td>.          <td class="code"><pr
+0600: e>&#39;:0&#39;</pre></td>.        </tr>.      .        <tr>.    
+0640:       <td>SSH_AGENT_PID</td>.          <td class="code"><pre>&#3
+0680: 9;9942&#39;</pre></td>.        </tr>.      .        <tr>.       
+06c0:    <td>LANG</td>.          <td class="code"><pre>&#39;en_US.UTF-
+0700: 8&#39;</pre></td>.        </tr>.      .        <tr>.          <t
+0740: d>TERM</td>.          <td class="code"><pre>&#39;xterm&#39;</pre
+0780: ></td>.        </tr>.      .        <tr>.          <td>SHELL</td
+07c0: >.          <td class="code"><pre>&#39;/bin/bash&#39;</pre></td>
+0800: .        </tr>.      .        <tr>.          <td>XDG_SESSION_PAT
+0840: H</td>.          <td class="code"><pre>&#39;/org/freedesktop/Dis
+0880: playManager/Session0&#39;</pre></td>.        </tr>.      .      
+08c0:   <tr>.          <td>XAUTHORITY</td>.          <td class="code">
+0900: <pre>&#39;/home/rajesh/.Xauthority&#39;</pre></td>.        </tr>
+0940: .      .        <tr>.          <td>SERVER_NAME</td>.          <t
+0980: d class="code"><pre>&#39;localhost&#39;</pre></td>.        </tr>
+09c0: .      .        <tr>.          <td>SESSION_MANAGER</td>.        
+0a00:   <td class="code"><pre>&#39;local/ubuntu:@/tmp/.ICE-unix/9907,u
+0a40: nix/ubuntu:/tmp/.ICE-unix/9907&#39;</pre></td>.        </tr>.   
+0a80:    .        <tr>.          <td>SHLVL</td>.          <td class="c
+0ac0: ode"><pre>&#39;1&#39;</pre></td>.        </tr>.      .        <t
+0b00: r>.          <td>MANDATORY_PATH</td>.          <td class="code">
+0b40: <pre>&#39;/usr/share/gconf/ubuntu.mandatory.path&#39;</pre></td>
+0b80: .        </tr>.      .        <tr>.          <td>wsgi.url_scheme
+0bc0: </td>.          <td class="code"><pre>&#39;http&#39;</pre></td>.
+0c00:         </tr>.      .        <tr>.          <td>COMPIZ_CONFIG_PR
+0c40: OFILE</td>.          <td class="code"><pre>&#39;ubuntu&#39;</pre
+0c80: ></td>.        </tr>.      .        <tr>.          <td>WINDOWID<
+0cc0: /td>.          <td class="code"><pre>&#39;54559619&#39;</pre></t
+0d00: d>.        </tr>.      .        <tr>.          <td>SERVER_PORT</
+0d40: td>.          <td class="code"><pre>&#39;8000&#39;</pre></td>.  
+0d80:       </tr>.      .        <tr>.          <td>GPG_AGENT_INFO</td
+0dc0: >.          <td class="code"><pre>&#39;/tmp/keyring-kh5fSe/gpg:0
+0e00: :1&#39;</pre></td>.        </tr>.      .        <tr>.          <
+0e40: td>HOME</td>.          <td class="code"><pre>&#39;/home/rajesh&#
+0e80: 39;</pre></td>.        </tr>.      .        <tr>.          <td>R
+0ec0: EMOTE_ADDR</td>.          <td class="code"><pre>&#39;127.0.0.1&#
+0f00: 39;</pre></td>.        </tr>.      .        <tr>.          <td>C
+0f40: ONTENT_LENGTH</td>.          <td class="code"><pre>&#39;&#39;</p
+0f80: re></td>.        </tr>.      .        <tr>.          <td>CONTENT
+0fc0: _TYPE</td>.          <td class="code"><pre>&#39;text/plain&#39;<
+1000: /pre></td>.        </tr>.      .        <tr>.          <td>PYTHO
+1040: NPATH</td>.          <td class="code"><pre>&#39;/home/rajesh/env
+1080: 1/bin/pdfconverter/SaasposeApp&#39;</pre></td>.        </tr>.   
+10c0:    .        <tr>.          <td>SSH_AUTH_SOCK</td>.          <td 
+1100: class="code"><pre>&#39;/tmp/keyring-kh5fSe/ssh&#39;</pre></td>. 
+1140:        </tr>.      .        <tr>.          <td>VIRTUAL_ENV</td>.
+1180:           <td class="code"><pre>&#39;/home/rajesh/env1&#39;</pre
+11c0: ></td>.        </tr>.      .        <tr>.          <td>GDMSESSIO
+1200: N</td>.          <td class="code"><pre>&#39;ubuntu&#39;</pre></t
+1240: d>.        </tr>.      .        <tr>.          <td>DEFAULTS_PATH
+1280: </td>.          <td class="code"><pre>&#39;/usr/share/gconf/ubun
+12c0: tu.default.path&#39;</pre></td>.        </tr>.      .        <tr
+1300: >.          <td>HTTP_USER_AGENT</td>.          <td class="code">
+1340: <pre>&#39;curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenS
+1380: SL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3&#39;</pre></td>.  
+13c0:       </tr>.      .        <tr>.          <td>HTTP_HOST</td>.   
+1400:        <td class="code"><pre>&#39;localhost:8000&#39;</pre></td>
+1440: .        </tr>.      .        <tr>.          <td>wsgi.multithrea
+1480: d</td>.          <td class="code"><pre>True</pre></td>.        <
+14c0: /tr>.      .        <tr>.          <td>XDG_SEAT_PATH</td>.      
+1500:     <td class="code"><pre>&#39;/org/freedesktop/DisplayManager/S
+1540: eat0&#39;</pre></td>.        </tr>.      .        <tr>.         
+1580:  <td>LESSCLOSE</td>.          <td class="code"><pre>&#39;/usr/bi
+15c0: n/lesspipe %s %s&#39;</pre></td>.        </tr>.      .        <t
+1600: r>.          <td>XDG_CURRENT_DESKTOP</td>.          <td class="c
+1640: ode"><pre>&#39;Unity&#39;</pre></td>.        </tr>.      .      
+1680:   <tr>.          <td>DBUS_SESSION_BUS_ADDRESS</td>.          <td
+16c0:  class="code"><pre>&#39;unix:abstract=/tmp/dbus-WBOvp2y0hl,guid=
+1700: 8301606c3e3531b601578a6f00000155&#39;</pre></td>.        </tr>. 
+1740:      .        <tr>.          <td>_</td>.          <td class="cod
+1780: e"><pre>&#39;/home/rajesh/env1/bin/python&#39;</pre></td>.      
+17c0:   </tr>.      .        <tr>.          <td>XDG_SESSION_COOKIE</td
+1800: >.          <td class="code"><pre>&#39;cdb8589db75be82da924b4a60
+1840: 0000006-1365011550.948337-1747186371&#39;</pre></td>.        </t
+1880: r>.      .        <tr>.          <td>HTTP_ACCEPT</td>.          
+18c0: <td class="code"><pre>&#39;*/*&#39;</pre></td>.        </tr>.   
+1900:    .        <tr>.          <td>DESKTOP_SESSION</td>.          <t
+1940: d class="code"><pre>&#39;ubuntu&#39;</pre></td>.        </tr>.  
+1980:     .        <tr>.          <td>wsgi.file_wrapper</td>.         
+19c0:  <td class="code"><pre>&#39;&#39;</pre></td>.        </tr>.     
+1a00:  .        <tr>.          <td>XDG_CONFIG_DIRS</td>.          <td 
+1a40: class="code"><pre>&#39;/etc/xdg/xdg-ubuntu:/etc/xdg&#39;</pre></
+1a80: td>.        </tr>.      .        <tr>.          <td>GNOME_KEYRIN
+1ac0: G_PID</td>.          <td class="code"><pre>&#39;9896&#39;</pre><
+1b00: /td>.        </tr>.      .        <tr>.          <td>UBUNTU_MENU
+1b40: PROXY</td>.          <td class="code"><pre>&#39;libappmenu.so&#3
+1b80: 9;</pre></td>.        </tr>.      .        <tr>.          <td>ws
+1bc0: gi.run_once</td>.          <td class="code"><pre>False</pre></td
+1c00: >.        </tr>.      .        <tr>.          <td>CSRF_COOKIE</t
+1c40: d>.          <td class="code"><pre>u&#39;mNBkmFnRQ1IGK9DdaLkCyFl
+1c80: 1F3PB1bpx&#39;</pre></td>.        </tr>.      .        <tr>.    
+1cc0:       <td>OLDPWD</td>.          <td class="code"><pre>&#39;/home
+1d00: /rajesh/env1/bin/dopdf&#39;</pre></td>.        </tr>.      .    
+1d40:     <tr>.          <td>GATEWAY_INTERFACE</td>.          <td clas
+1d80: s="code"><pre>&#39;CGI/1.1&#39;</pre></td>.        </tr>.      .
+1dc0:         <tr>.          <td>wsgi.input</td>.          <td class="
+1e00: code"><pre>&lt;socket._fileobject object at 0x7f4b300242d0&gt;</
+1e40: pre></td>.        </tr>.      .        <tr>.          <td>XDG_DA
+1e80: TA_DIRS</td>.          <td class="code"><pre>&#39;/usr/share/ubu
+1ec0: ntu:/usr/share/gnome:/usr/local/share/:/usr/share/&#39;</pre></t
+1f00: d>.        </tr>.      .        <tr>.          <td>PWD</td>.    
+1f40:       <td class="code"><pre>&#39;/home/rajesh/env1/bin/pdfconver
+1f80: ter&#39;</pre></td>.        </tr>.      .        <tr>.          
+1fc0: <td>DJANGO_SETTINGS_MODULE</td>.          <td class="code"><pre>
+2000: &#39;pdfconverter.settings&#39;</pre></td>.        </tr>.      .
+2040:         <tr>.          <td>TZ</td>.          <td class="code"><p
+2080: re>&#39;America/Chicago&#39;</pre></td>.        </tr>.      .   
+20c0:      <tr>.          <td>COLORTERM</td>.          <td class="code
+2100: "><pre>&#39;gnome-terminal&#39;</pre></td>.        </tr>.      .
+2140:         <tr>.          <td>LS_COLORS</td>.          <td class="c
+2180: ode"><pre>&#39;rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do
+21c0: =01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=
+2200: 30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;3
+2240: 1:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*
+2280: .txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31
+22c0: :*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2
+2300: =01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;3
+2340: 1:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.
+2380: cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=
+23c0: 01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;3
+2400: 5:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*
+2440: .svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mp
+2480: g=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=
+24c0: 01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;3
+2500: 5:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.
+2540: flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01
+2580: ;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:
+25c0: *.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au
+2600: =00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=0
+2640: 0;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:
+2680: *.oga=00;36:*.spx=00;36:*.xspf=00;36:&#39;</pre></td>.        </
+26c0: tr>.      .        <tr>.          <td>REMOTE_HOST</td>.         
+2700:  <td class="code"><pre>&#39;&#39;</pre></td>.        </tr>.     
+2740:  .        <tr>.          <td>wsgi.errors</td>.          <td clas
+2780: s="code"><pre>&lt;open file &#39;&lt;stderr&gt;&#39;, mode &#39;
+27c0: w&#39; at 0x7f4b3ffab270&gt;</pre></td>.        </tr>.      .   
+2800:      <tr>.          <td>PATH_INFO</td>.          <td class="code
+2840: "><pre>u&#39;/pdfrequester/download/&#39;</pre></td>.        </t
+2880: r>.      .    </tbody>.  </table>...  <h3 id="settings-info">Set
+28c0: tings</h3>.  <h4>Using settings module <code>pdfconverter.settin
+2900: gs</code></h4>.  <table class="req">.    <thead>.      <tr>.    
+2940:     <th>Setting</th>.        <th>Value</th>.      </tr>.    </th
+2980: ead>.    <tbody>.      .        <tr>.          <td>USE_L10N</td>
+29c0: .          <td class="code"><pre>True</pre></td>.        </tr>. 
+2a00:      .        <tr>.          <td>USE_THOUSAND_SEPARATOR</td>.   
+2a40:        <td class="code"><pre>False</pre></td>.        </tr>.    
+2a80:   .        <tr>.          <td>CSRF_COOKIE_SECURE</td>.          
+2ac0: <td class="code"><pre>False</pre></td>.        </tr>.      .    
+2b00:     <tr>.          <td>LANGUAGE_CODE</td>.          <td class="c
+2b40: ode"><pre>&#39;en-us&#39;</pre></td>.        </tr>.      .      
+2b80:   <tr>.          <td>ROOT_URLCONF</td>.          <td class="code
+2bc0: "><pre>&#39;pdfconverter.urls&#39;</pre></td>.        </tr>.    
+2c00:   .        <tr>.          <td>MANAGERS</td>.          <td class=
+2c40: "code"><pre>()</pre></td>.        </tr>.      .        <tr>.    
+2c80:       <td>DEFAULT_CHARSET</td>.          <td class="code"><pre>&
+2cc0: #39;utf-8&#39;</pre></td>.        </tr>.      .        <tr>.    
+2d00:       <td>STATIC_ROOT</td>.          <td class="code"><pre>&#39;
+2d40: &#39;</pre></td>.        </tr>.      .        <tr>.          <td
+2d80: >ALLOWED_HOSTS</td>.          <td class="code"><pre>[]</pre></td
+2dc0: >.        </tr>.      .        <tr>.          <td>MESSAGE_STORAG
+2e00: E</td>.          <td class="code"><pre>&#39;django.contrib.messa
+2e40: ges.storage.fallback.FallbackStorage&#39;</pre></td>.        </t
+2e80: r>.      .        <tr>.          <td>EMAIL_SUBJECT_PREFIX</td>. 
+2ec0:          <td class="code"><pre>&#39;[Django] &#39;</pre></td>.  
+2f00:       </tr>.      .        <tr>.          <td>FILE_UPLOAD_PERMIS
+2f40: SIONS</td>.          <td class="code"><pre>None</pre></td>.     
+2f80:    </tr>.      .        <tr>.          <td>STATICFILES_FINDERS</
+2fc0: td>.          <td class="code"><pre>(&#39;django.contrib.staticf
+3000: iles.finders.FileSystemFinder&#39;,. &#39;django.contrib.staticf
+3040: iles.finders.AppDirectoriesFinder&#39;)</pre></td>.        </tr>
+3080: .      .        <tr>.          <td>SESSION_CACHE_ALIAS</td>.    
+30c0:       <td class="code"><pre>&#39;default&#39;</pre></td>.       
+3100:  </tr>.      .        <tr>.          <td>SESSION_COOKIE_DOMAIN</
+3140: td>.          <td class="code"><pre>None</pre></td>.        </tr
+3180: >.      .        <tr>.          <td>SESSION_COOKIE_NAME</td>.   
+31c0:        <td class="code"><pre>&#39;sessionid&#39;</pre></td>.    
+3200:     </tr>.      .        <tr>.          <td>ADMIN_FOR</td>.     
+3240:      <td class="code"><pre>()</pre></td>.        </tr>.      .  
+3280:       <tr>.          <td>TIME_INPUT_FORMATS</td>.          <td c
+32c0: lass="code"><pre>(&#39;%H:%M:%S&#39;, &#39;%H:%M&#39;)</pre></td
+3300: >.        </tr>.      .        <tr>.          <td>DATABASES</td>
+3340: .          <td class="code"><pre>{&#39;default&#39;: {&#39;ENGIN
+3380: E&#39;: &#39;django.db.backends.dummy&#39;,.             &#39;HO
+33c0: ST&#39;: &#39;&#39;,.             &#39;NAME&#39;: &#39;&#39;,.  
+3400:            &#39;OPTIONS&#39;: {},.             &#39;PASSWORD&#39
+3440: ;: u&#39;********************&#39;,.             &#39;PORT&#39;:
+3480:  &#39;&#39;,.             &#39;TEST_CHARSET&#39;: None,.        
+34c0:      &#39;TEST_COLLATION&#39;: None,.             &#39;TEST_MIRR
+3500: OR&#39;: None,.             &#39;TEST_NAME&#39;: None,.         
+3540:     &#39;TIME_ZONE&#39;: &#39;UTC&#39;,.             &#39;USER&#
+3580: 39;: &#39;&#39;}}</pre></td>.        </tr>.      .        <tr>. 
+35c0:          <td>SERVER_EMAIL</td>.          <td class="code"><pre>&
+3600: #39;root@localhost&#39;</pre></td>.        </tr>.      .        
+3640: <tr>.          <td>FILE_UPLOAD_HANDLERS</td>.          <td class
+3680: ="code"><pre>(&#39;django.core.files.uploadhandler.MemoryFileUpl
+36c0: oadHandler&#39;,. &#39;django.core.files.uploadhandler.Temporary
+3700: FileUploadHandler&#39;)</pre></td>.        </tr>.      .        
+3740: <tr>.          <td>DEFAULT_CONTENT_TYPE</td>.          <td class
+3780: ="code"><pre>&#39;text/html&#39;</pre></td>.        </tr>.      
+37c0: .        <tr>.          <td>APPEND_SLASH</td>.          <td clas
+3800: s="code"><pre>True</pre></td>.        </tr>.      .        <tr>.
+3840:           <td>FIRST_DAY_OF_WEEK</td>.          <td class="code">
+3880: <pre>0</pre></td>.        </tr>.      .        <tr>.          <t
+38c0: d>DATABASE_ROUTERS</td>.          <td class="code"><pre>[]</pre>
+3900: </td>.        </tr>.      .        <tr>.          <td>YEAR_MONTH
+3940: _FORMAT</td>.          <td class="code"><pre>&#39;F Y&#39;</pre>
+3980: </td>.        </tr>.      .        <tr>.          <td>STATICFILE
+39c0: S_STORAGE</td>.          <td class="code"><pre>&#39;django.contr
+3a00: ib.staticfiles.storage.StaticFilesStorage&#39;</pre></td>.      
+3a40:   </tr>.      .        <tr>.          <td>CACHES</td>.          
+3a80: <td class="code"><pre>{&#39;default&#39;: {&#39;BACKEND&#39;: &#
+3ac0: 39;django.core.cache.backends.locmem.LocMemCache&#39;}}</pre></t
+3b00: d>.        </tr>.      .        <tr>.          <td>SESSION_COOKI
+3b40: E_PATH</td>.          <td class="code"><pre>&#39;/&#39;</pre></t
+3b80: d>.        </tr>.      .        <tr>.          <td>MIDDLEWARE_CL
+3bc0: ASSES</td>.          <td class="code"><pre>(&#39;django.middlewa
+3c00: re.common.CommonMiddleware&#39;,. &#39;django.contrib.sessions.m
+3c40: iddleware.SessionMiddleware&#39;,. &#39;django.middleware.csrf.C
+3c80: srfViewMiddleware&#39;,. &#39;django.contrib.auth.middleware.Aut
+3cc0: henticationMiddleware&#39;,. &#39;django.contrib.messages.middle
+3d00: ware.MessageMiddleware&#39;)</pre></td>.        </tr>.      .   
+3d40:      <tr>.          <td>USE_I18N</td>.          <td class="code"
+3d80: ><pre>True</pre></td>.        </tr>.      .        <tr>.        
+3dc0:   <td>THOUSAND_SEPARATOR</td>.          <td class="code"><pre>&#
+3e00: 39;,&#39;</pre></td>.        </tr>.      .        <tr>.         
+3e40:  <td>SECRET_KEY</td>.          <td class="code"><pre>u&#39;*****
+3e80: ***************&#39;</pre></td>.        </tr>.      .        <tr
+3ec0: >.          <td>LANGUAGE_COOKIE_NAME</td>.          <td class="c
+3f00: ode"><pre>&#39;django_language&#39;</pre></td>.        </tr>.   
+3f40:    .        <tr>.          <td>DEFAULT_INDEX_TABLESPACE</td>.   
+3f80:        <td class="code"><pre>&#39;&#39;</pre></td>.        </tr>
+3fc0: .      .        <tr>.          <td>TRANSACTIONS_MANAGED</td>.   
+<= Recv data, 16314 bytes (0x3fba)
+0000:        <td class="code"><pre>False</pre></td>.        </tr>.    
+0040:   .        <tr>.          <td>LOGGING_CONFIG</td>.          <td 
+0080: class="code"><pre>&#39;django.utils.log.dictConfig&#39;</pre></t
+00c0: d>.        </tr>.      .        <tr>.          <td>SEND_BROKEN_L
+0100: INK_EMAILS</td>.          <td class="code"><pre>False</pre></td>
+0140: .        </tr>.      .        <tr>.          <td>TEMPLATE_LOADER
+0180: S</td>.          <td class="code"><pre>(&#39;django.template.loa
+01c0: ders.filesystem.Loader&#39;,. &#39;django.template.loaders.app_d
+0200: irectories.Loader&#39;)</pre></td>.        </tr>.      .        
+0240: <tr>.          <td>WSGI_APPLICATION</td>.          <td class="co
+0280: de"><pre>&#39;pdfconverter.wsgi.application&#39;</pre></td>.    
+02c0:     </tr>.      .        <tr>.          <td>TEMPLATE_DEBUG</td>.
+0300:           <td class="code"><pre>True</pre></td>.        </tr>.  
+0340:     .        <tr>.          <td>X_FRAME_OPTIONS</td>.          <
+0380: td class="code"><pre>&#39;SAMEORIGIN&#39;</pre></td>.        </t
+03c0: r>.      .        <tr>.          <td>AUTHENTICATION_BACKENDS</td
+0400: >.          <td class="code"><pre>(&#39;django.contrib.auth.back
+0440: ends.ModelBackend&#39;,)</pre></td>.        </tr>.      .       
+0480:  <tr>.          <td>FORCE_SCRIPT_NAME</td>.          <td class="
+04c0: code"><pre>None</pre></td>.        </tr>.      .        <tr>.   
+0500:        <td>USE_X_FORWARDED_HOST</td>.          <td class="code">
+0540: <pre>False</pre></td>.        </tr>.      .        <tr>.        
+0580:   <td>SIGNING_BACKEND</td>.          <td class="code"><pre>&#39;
+05c0: django.core.signing.TimestampSigner&#39;</pre></td>.        </tr
+0600: >.      .        <tr>.          <td>SESSION_COOKIE_SECURE</td>. 
+0640:          <td class="code"><pre>False</pre></td>.        </tr>.  
+0680:     .        <tr>.          <td>CSRF_COOKIE_DOMAIN</td>.        
+06c0:   <td class="code"><pre>None</pre></td>.        </tr>.      .   
+0700:      <tr>.          <td>FILE_CHARSET</td>.          <td class="c
+0740: ode"><pre>&#39;utf-8&#39;</pre></td>.        </tr>.      .      
+0780:   <tr>.          <td>DEBUG</td>.          <td class="code"><pre>
+07c0: True</pre></td>.        </tr>.      .        <tr>.          <td>
+0800: SESSION_FILE_PATH</td>.          <td class="code"><pre>None</pre
+0840: ></td>.        </tr>.      .        <tr>.          <td>DEFAULT_F
+0880: ILE_STORAGE</td>.          <td class="code"><pre>&#39;django.cor
+08c0: e.files.storage.FileSystemStorage&#39;</pre></td>.        </tr>.
+0900:       .        <tr>.          <td>INSTALLED_APPS</td>.          
+0940: <td class="code"><pre>(&#39;django.contrib.auth&#39;,. &#39;djan
+0980: go.contrib.contenttypes&#39;,. &#39;django.contrib.sessions&#39;
+09c0: ,. &#39;django.contrib.sites&#39;,. &#39;django.contrib.messages
+0a00: &#39;,. &#39;django.contrib.staticfiles&#39;,. &#39;htmltopdf&#3
+0a40: 9;,. &#39;pdfrequester&#39;,. &#39;SaasposeApp&#39;)</pre></td>.
+0a80:         </tr>.      .        <tr>.          <td>LANGUAGES</td>. 
+0ac0:          <td class="code"><pre>((&#39;af&#39;, &#39;Afrikaans&#3
+0b00: 9;),. (&#39;ar&#39;, &#39;Arabic&#39;),. (&#39;az&#39;, &#39;Aze
+0b40: rbaijani&#39;),. (&#39;bg&#39;, &#39;Bulgarian&#39;),. (&#39;be&
+0b80: #39;, &#39;Belarusian&#39;),. (&#39;bn&#39;, &#39;Bengali&#39;),
+0bc0: . (&#39;br&#39;, &#39;Breton&#39;),. (&#39;bs&#39;, &#39;Bosnian
+0c00: &#39;),. (&#39;ca&#39;, &#39;Catalan&#39;),. (&#39;cs&#39;, &#39
+0c40: ;Czech&#39;),. (&#39;cy&#39;, &#39;Welsh&#39;),. (&#39;da&#39;, 
+0c80: &#39;Danish&#39;),. (&#39;de&#39;, &#39;German&#39;),. (&#39;el&
+0cc0: #39;, &#39;Greek&#39;),. (&#39;en&#39;, &#39;English&#39;),. (&#
+0d00: 39;en-gb&#39;, &#39;British English&#39;),. (&#39;eo&#39;, &#39;
+0d40: Esperanto&#39;),. (&#39;es&#39;, &#39;Spanish&#39;),. (&#39;es-a
+0d80: r&#39;, &#39;Argentinian Spanish&#39;),. (&#39;es-mx&#39;, &#39;
+0dc0: Mexican Spanish&#39;),. (&#39;es-ni&#39;, &#39;Nicaraguan Spanis
+0e00: h&#39;),. (&#39;es-ve&#39;, &#39;Venezuelan Spanish&#39;),. (&#3
+0e40: 9;et&#39;, &#39;Estonian&#39;),. (&#39;eu&#39;, &#39;Basque&#39;
+0e80: ),. (&#39;fa&#39;, &#39;Persian&#39;),. (&#39;fi&#39;, &#39;Finn
+0ec0: ish&#39;),. (&#39;fr&#39;, &#39;French&#39;),. (&#39;fy-nl&#39;,
+0f00:  &#39;Frisian&#39;),. (&#39;ga&#39;, &#39;Irish&#39;),. (&#39;gl
+0f40: &#39;, &#39;Galician&#39;),. (&#39;he&#39;, &#39;Hebrew&#39;),. 
+0f80: (&#39;hi&#39;, &#39;Hindi&#39;),. (&#39;hr&#39;, &#39;Croatian&#
+0fc0: 39;),. (&#39;hu&#39;, &#39;Hungarian&#39;),. (&#39;ia&#39;, &#39
+1000: ;Interlingua&#39;),. (&#39;id&#39;, &#39;Indonesian&#39;),. (&#3
+1040: 9;is&#39;, &#39;Icelandic&#39;),. (&#39;it&#39;, &#39;Italian&#3
+1080: 9;),. (&#39;ja&#39;, &#39;Japanese&#39;),. (&#39;ka&#39;, &#39;G
+10c0: eorgian&#39;),. (&#39;kk&#39;, &#39;Kazakh&#39;),. (&#39;km&#39;
+1100: , &#39;Khmer&#39;),. (&#39;kn&#39;, &#39;Kannada&#39;),. (&#39;k
+1140: o&#39;, &#39;Korean&#39;),. (&#39;lb&#39;, &#39;Luxembourgish&#3
+1180: 9;),. (&#39;lt&#39;, &#39;Lithuanian&#39;),. (&#39;lv&#39;, &#39
+11c0: ;Latvian&#39;),. (&#39;mk&#39;, &#39;Macedonian&#39;),. (&#39;ml
+1200: &#39;, &#39;Malayalam&#39;),. (&#39;mn&#39;, &#39;Mongolian&#39;
+1240: ),. (&#39;nb&#39;, &#39;Norwegian Bokmal&#39;),. (&#39;ne&#39;, 
+1280: &#39;Nepali&#39;),. (&#39;nl&#39;, &#39;Dutch&#39;),. (&#39;nn&#
+12c0: 39;, &#39;Norwegian Nynorsk&#39;),. (&#39;pa&#39;, &#39;Punjabi&
+1300: #39;),. (&#39;pl&#39;, &#39;Polish&#39;),. (&#39;pt&#39;, &#39;P
+1340: ortuguese&#39;),. (&#39;pt-br&#39;, &#39;Brazilian Portuguese&#3
+1380: 9;),. (&#39;ro&#39;, &#39;Romanian&#39;),. (&#39;ru&#39;, &#39;R
+13c0: ussian&#39;),. (&#39;sk&#39;, &#39;Slovak&#39;),. (&#39;sl&#39;,
+1400:  &#39;Slovenian&#39;),. (&#39;sq&#39;, &#39;Albanian&#39;),. (&#
+1440: 39;sr&#39;, &#39;Serbian&#39;),. (&#39;sr-latn&#39;, &#39;Serbia
+1480: n Latin&#39;),. (&#39;sv&#39;, &#39;Swedish&#39;),. (&#39;sw&#39
+14c0: ;, &#39;Swahili&#39;),. (&#39;ta&#39;, &#39;Tamil&#39;),. (&#39;
+1500: te&#39;, &#39;Telugu&#39;),. (&#39;th&#39;, &#39;Thai&#39;),. (&
+1540: #39;tr&#39;, &#39;Turkish&#39;),. (&#39;tt&#39;, &#39;Tatar&#39;
+1580: ),. (&#39;udm&#39;, &#39;Udmurt&#39;),. (&#39;uk&#39;, &#39;Ukra
+15c0: inian&#39;),. (&#39;ur&#39;, &#39;Urdu&#39;),. (&#39;vi&#39;, &#
+1600: 39;Vietnamese&#39;),. (&#39;zh-cn&#39;, &#39;Simplified Chinese&
+1640: #39;),. (&#39;zh-tw&#39;, &#39;Traditional Chinese&#39;))</pre><
+1680: /td>.        </tr>.      .        <tr>.          <td>COMMENTS_AL
+16c0: LOW_PROFANITIES</td>.          <td class="code"><pre>False</pre>
+1700: </td>.        </tr>.      .        <tr>.          <td>STATICFILE
+1740: S_DIRS</td>.          <td class="code"><pre>()</pre></td>.      
+1780:   </tr>.      .        <tr>.          <td>PREPEND_WWW</td>.     
+17c0:      <td class="code"><pre>False</pre></td>.        </tr>.      
+1800: .        <tr>.          <td>SECURE_PROXY_SSL_HEADER</td>.       
+1840:    <td class="code"><pre>None</pre></td>.        </tr>.      .  
+1880:       <tr>.          <td>SESSION_COOKIE_HTTPONLY</td>.          
+18c0: <td class="code"><pre>True</pre></td>.        </tr>.      .     
+1900:    <tr>.          <td>DEBUG_PROPAGATE_EXCEPTIONS</td>.          
+1940: <td class="code"><pre>False</pre></td>.        </tr>.      .    
+1980:     <tr>.          <td>MONTH_DAY_FORMAT</td>.          <td class
+19c0: ="code"><pre>&#39;F j&#39;</pre></td>.        </tr>.      .     
+1a00:    <tr>.          <td>LOGIN_URL</td>.          <td class="code">
+1a40: <pre>&#39;/accounts/login/&#39;</pre></td>.        </tr>.      .
+1a80:         <tr>.          <td>SESSION_EXPIRE_AT_BROWSER_CLOSE</td>.
+1ac0:           <td class="code"><pre>False</pre></td>.        </tr>. 
+1b00:      .        <tr>.          <td>TIME_FORMAT</td>.          <td 
+1b40: class="code"><pre>&#39;P&#39;</pre></td>.        </tr>.      .  
+1b80:       <tr>.          <td>AUTH_USER_MODEL</td>.          <td clas
+1bc0: s="code"><pre>&#39;auth.User&#39;</pre></td>.        </tr>.     
+1c00:  .        <tr>.          <td>DATE_INPUT_FORMATS</td>.          <
+1c40: td class="code"><pre>(&#39;%Y-%m-%d&#39;,. &#39;%m/%d/%Y&#39;,. 
+1c80: &#39;%m/%d/%y&#39;,. &#39;%b %d %Y&#39;,. &#39;%b %d, %Y&#39;,. 
+1cc0: &#39;%d %b %Y&#39;,. &#39;%d %b, %Y&#39;,. &#39;%B %d %Y&#39;,. 
+1d00: &#39;%B %d, %Y&#39;,. &#39;%d %B %Y&#39;,. &#39;%d %B, %Y&#39;)<
+1d40: /pre></td>.        </tr>.      .        <tr>.          <td>CSRF_
+1d80: COOKIE_NAME</td>.          <td class="code"><pre>&#39;csrftoken&
+1dc0: #39;</pre></td>.        </tr>.      .        <tr>.          <td>
+1e00: EMAIL_HOST_PASSWORD</td>.          <td class="code"><pre>u&#39;*
+1e40: *******************&#39;</pre></td>.        </tr>.      .       
+1e80:  <tr>.          <td>PASSWORD_RESET_TIMEOUT_DAYS</td>.          <
+1ec0: td class="code"><pre>u&#39;********************&#39;</pre></td>.
+1f00:         </tr>.      .        <tr>.          <td>CACHE_MIDDLEWARE
+1f40: _ALIAS</td>.          <td class="code"><pre>&#39;default&#39;</p
+1f80: re></td>.        </tr>.      .        <tr>.          <td>SESSION
+1fc0: _SAVE_EVERY_REQUEST</td>.          <td class="code"><pre>False</
+2000: pre></td>.        </tr>.      .        <tr>.          <td>NUMBER
+2040: _GROUPING</td>.          <td class="code"><pre>0</pre></td>.    
+2080:     </tr>.      .        <tr>.          <td>SESSION_ENGINE</td>.
+20c0:           <td class="code"><pre>&#39;django.contrib.sessions.bac
+2100: kends.db&#39;</pre></td>.        </tr>.      .        <tr>.     
+2140:      <td>CSRF_FAILURE_VIEW</td>.          <td class="code"><pre>
+2180: &#39;django.views.csrf.csrf_failure&#39;</pre></td>.        </tr
+21c0: >.      .        <tr>.          <td>CSRF_COOKIE_PATH</td>.      
+2200:     <td class="code"><pre>&#39;/&#39;</pre></td>.        </tr>. 
+2240:      .        <tr>.          <td>LOGIN_REDIRECT_URL</td>.       
+2280:    <td class="code"><pre>&#39;/accounts/profile/&#39;</pre></td>
+22c0: .        </tr>.      .        <tr>.          <td>DECIMAL_SEPARAT
+2300: OR</td>.          <td class="code"><pre>&#39;.&#39;</pre></td>. 
+2340:        </tr>.      .        <tr>.          <td>IGNORABLE_404_URL
+2380: S</td>.          <td class="code"><pre>()</pre></td>.        </t
+23c0: r>.      .        <tr>.          <td>LOCALE_PATHS</td>.         
+2400:  <td class="code"><pre>()</pre></td>.        </tr>.      .      
+2440:   <tr>.          <td>TEMPLATE_STRING_IF_INVALID</td>.          <
+2480: td class="code"><pre>&#39;&#39;</pre></td>.        </tr>.      .
+24c0:         <tr>.          <td>LOGOUT_URL</td>.          <td class="
+2500: code"><pre>&#39;/accounts/logout/&#39;</pre></td>.        </tr>.
+2540:       .        <tr>.          <td>EMAIL_USE_TLS</td>.          <
+2580: td class="code"><pre>False</pre></td>.        </tr>.      .     
+25c0:    <tr>.          <td>FIXTURE_DIRS</td>.          <td class="cod
+2600: e"><pre>()</pre></td>.        </tr>.      .        <tr>.        
+2640:   <td>EMAIL_HOST</td>.          <td class="code"><pre>&#39;local
+2680: host&#39;</pre></td>.        </tr>.      .        <tr>.         
+26c0:  <td>DATE_FORMAT</td>.          <td class="code"><pre>&#39;N j, 
+2700: Y&#39;</pre></td>.        </tr>.      .        <tr>.          <t
+2740: d>MEDIA_ROOT</td>.          <td class="code"><pre>&#39;&#39;</pr
+2780: e></td>.        </tr>.      .        <tr>.          <td>DEFAULT_
+27c0: EXCEPTION_REPORTER_FILTER</td>.          <td class="code"><pre>&
+2800: #39;django.views.debug.SafeExceptionReporterFilter&#39;</pre></t
+2840: d>.        </tr>.      .        <tr>.          <td>ADMINS</td>. 
+2880:          <td class="code"><pre>()</pre></td>.        </tr>.     
+28c0:  .        <tr>.          <td>FORMAT_MODULE_PATH</td>.          <
+2900: td class="code"><pre>None</pre></td>.        </tr>.      .      
+2940:   <tr>.          <td>DEFAULT_FROM_EMAIL</td>.          <td class
+2980: ="code"><pre>&#39;webmaster@localhost&#39;</pre></td>.        </
+29c0: tr>.      .        <tr>.          <td>MEDIA_URL</td>.          <
+2a00: td class="code"><pre>&#39;&#39;</pre></td>.        </tr>.      .
+2a40:         <tr>.          <td>DATETIME_FORMAT</td>.          <td cl
+2a80: ass="code"><pre>&#39;N j, Y, P&#39;</pre></td>.        </tr>.   
+2ac0:    .        <tr>.          <td>TEMPLATE_DIRS</td>.          <td 
+2b00: class="code"><pre>()</pre></td>.        </tr>.      .        <tr
+2b40: >.          <td>SITE_ID</td>.          <td class="code"><pre>1</
+2b80: pre></td>.        </tr>.      .        <tr>.          <td>DISALL
+2bc0: OWED_USER_AGENTS</td>.          <td class="code"><pre>()</pre></
+2c00: td>.        </tr>.      .        <tr>.          <td>ALLOWED_INCL
+2c40: UDE_ROOTS</td>.          <td class="code"><pre>()</pre></td>.   
+2c80:      </tr>.      .        <tr>.          <td>LOGGING</td>.      
+2cc0:     <td class="code"><pre>{&#39;disable_existing_loggers&#39;: F
+2d00: alse,. &#39;filters&#39;: {&#39;require_debug_false&#39;: {&#39;
+2d40: ()&#39;: &#39;django.utils.log.RequireDebugFalse&#39;}},. &#39;h
+2d80: andlers&#39;: {&#39;mail_admins&#39;: {&#39;class&#39;: &#39;dja
+2dc0: ngo.utils.log.AdminEmailHandler&#39;,.                          
+2e00:     &#39;filters&#39;: [&#39;require_debug_false&#39;],.        
+2e40:                       &#39;level&#39;: &#39;ERROR&#39;}},. &#39;
+2e80: loggers&#39;: {&#39;django.request&#39;: {&#39;handlers&#39;: [&
+2ec0: #39;mail_admins&#39;],.                                &#39;leve
+2f00: l&#39;: &#39;ERROR&#39;,.                                &#39;pr
+2f40: opagate&#39;: True}},. &#39;version&#39;: 1}</pre></td>.        
+2f80: </tr>.      .        <tr>.          <td>SHORT_DATE_FORMAT</td>. 
+2fc0:          <td class="code"><pre>&#39;m/d/Y&#39;</pre></td>.      
+3000:   </tr>.      .        <tr>.          <td>TEST_RUNNER</td>.     
+3040:      <td class="code"><pre>&#39;django.test.simple.DjangoTestSui
+3080: teRunner&#39;</pre></td>.        </tr>.      .        <tr>.     
+30c0:      <td>CACHE_MIDDLEWARE_KEY_PREFIX</td>.          <td class="c
+3100: ode"><pre>u&#39;********************&#39;</pre></td>.        </t
+3140: r>.      .        <tr>.          <td>TIME_ZONE</td>.          <t
+3180: d class="code"><pre>&#39;America/Chicago&#39;</pre></td>.       
+31c0:  </tr>.      .        <tr>.          <td>FILE_UPLOAD_MAX_MEMORY_
+3200: SIZE</td>.          <td class="code"><pre>2621440</pre></td>.   
+3240:      </tr>.      .        <tr>.          <td>EMAIL_BACKEND</td>.
+3280:           <td class="code"><pre>&#39;django.core.mail.backends.s
+32c0: mtp.EmailBackend&#39;</pre></td>.        </tr>.      .        <t
+3300: r>.          <td>DEFAULT_TABLESPACE</td>.          <td class="co
+3340: de"><pre>&#39;&#39;</pre></td>.        </tr>.      .        <tr>
+3380: .          <td>TEMPLATE_CONTEXT_PROCESSORS</td>.          <td cl
+33c0: ass="code"><pre>(&#39;django.contrib.auth.context_processors.aut
+3400: h&#39;,. &#39;django.core.context_processors.debug&#39;,. &#39;d
+3440: jango.core.context_processors.i18n&#39;,. &#39;django.core.conte
+3480: xt_processors.media&#39;,. &#39;django.core.context_processors.s
+34c0: tatic&#39;,. &#39;django.core.context_processors.tz&#39;,. &#39;
+3500: django.contrib.messages.context_processors.messages&#39;)</pre><
+3540: /td>.        </tr>.      .        <tr>.          <td>SESSION_COO
+3580: KIE_AGE</td>.          <td class="code"><pre>1209600</pre></td>.
+35c0:         </tr>.      .        <tr>.          <td>SETTINGS_MODULE<
+3600: /td>.          <td class="code"><pre>&#39;pdfconverter.settings&
+3640: #39;</pre></td>.        </tr>.      .        <tr>.          <td>
+3680: USE_ETAGS</td>.          <td class="code"><pre>False</pre></td>.
+36c0:         </tr>.      .        <tr>.          <td>LANGUAGES_BIDI</
+3700: td>.          <td class="code"><pre>(&#39;he&#39;, &#39;ar&#39;,
+3740:  &#39;fa&#39;)</pre></td>.        </tr>.      .        <tr>.    
+3780:       <td>FILE_UPLOAD_TEMP_DIR</td>.          <td class="code"><
+37c0: pre>None</pre></td>.        </tr>.      .        <tr>.          
+3800: <td>INTERNAL_IPS</td>.          <td class="code"><pre>()</pre></
+3840: td>.        </tr>.      .        <tr>.          <td>STATIC_URL</
+3880: td>.          <td class="code"><pre>&#39;/static/&#39;</pre></td
+38c0: >.        </tr>.      .        <tr>.          <td>EMAIL_PORT</td
+3900: >.          <td class="code"><pre>25</pre></td>.        </tr>.  
+3940:     .        <tr>.          <td>USE_TZ</td>.          <td class=
+3980: "code"><pre>True</pre></td>.        </tr>.      .        <tr>.  
+39c0:         <td>SHORT_DATETIME_FORMAT</td>.          <td class="code
+3a00: "><pre>&#39;m/d/Y P&#39;</pre></td>.        </tr>.      .       
+3a40:  <tr>.          <td>PASSWORD_HASHERS</td>.          <td class="c
+3a80: ode"><pre>u&#39;********************&#39;</pre></td>.        </t
+3ac0: r>.      .        <tr>.          <td>ABSOLUTE_URL_OVERRIDES</td>
+3b00: .          <td class="code"><pre>{}</pre></td>.        </tr>.   
+3b40:    .        <tr>.          <td>CACHE_MIDDLEWARE_SECONDS</td>.   
+3b80:        <td class="code"><pre>600</pre></td>.        </tr>.      
+3bc0: .        <tr>.          <td>DATETIME_INPUT_FORMATS</td>.        
+3c00:   <td class="code"><pre>(&#39;%Y-%m-%d %H:%M:%S&#39;,. &#39;%Y-%
+3c40: m-%d %H:%M:%S.%f&#39;,. &#39;%Y-%m-%d %H:%M&#39;,. &#39;%Y-%m-%d
+3c80: &#39;,. &#39;%m/%d/%Y %H:%M:%S&#39;,. &#39;%m/%d/%Y %H:%M:%S.%f&
+3cc0: #39;,. &#39;%m/%d/%Y %H:%M&#39;,. &#39;%m/%d/%Y&#39;,. &#39;%m/%
+3d00: d/%y %H:%M:%S&#39;,. &#39;%m/%d/%y %H:%M:%S.%f&#39;,. &#39;%m/%d
+3d40: /%y %H:%M&#39;,. &#39;%m/%d/%y&#39;)</pre></td>.        </tr>.  
+3d80:     .        <tr>.          <td>EMAIL_HOST_USER</td>.          <
+3dc0: td class="code"><pre>&#39;&#39;</pre></td>.        </tr>.      .
+3e00:         <tr>.          <td>PROFANITIES_LIST</td>.          <td c
+3e40: lass="code"><pre>u&#39;********************&#39;</pre></td>.    
+3e80:     </tr>.      .    </tbody>.  </table>..</div>..  <div id="exp
+3ec0: lanation">.    <p>.      You're seeing this error because you ha
+3f00: ve <code>DEBUG = True</code> in your.      Django settings file.
+3f40:  Change that to <code>False</code>, and Django will.      displa
+3f80: y a standard 500 page..    </p>.  </div>..</body>.</html>.
+== Info: Closing connection #0

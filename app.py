@@ -13,9 +13,17 @@ channel.queue_declare(queue='hello') # Declare a queue
 channel.basic_publish(exchange='', routing_key='hello', body='Hello CloudAMQP!')
 print " [x] Sent 'Hello World!'"
 
+def convert_to_pdf(fn):
+  # convert to pdf using wkhtmlpdf
+  os.popen("./wkhtmltopdf static/htmls/"+fn+".html static/pdfs/"+fn+".pdf")
+
 # create a function which is called on incoming messages
 def callback(ch, method, properties, body):
   print " [x] Received %r" % (body)
+  fn = body.split('.html')[0]
+  print fn
+  convert_to_pdf(fn)
+
 
 # set up subscription on the queue
 channel.basic_consume(callback,
