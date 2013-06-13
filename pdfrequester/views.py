@@ -1,7 +1,6 @@
 # Create your views here.
 from django.http import HttpResponse
 from django.shortcuts import render
-import SaasposeApp
 
 import urllib2
 import urlparse

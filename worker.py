@@ -9,10 +9,14 @@ channel = connection.channel()
 
 channel.queue_declare(queue='task_queue', durable=True)
 print ' [*] Waiting for messages. To exit press CTRL+C'
+if os.uname()=="Darwin":
+    HTMLTOPDF = './wkhtmltopdf.mac '
+else:
+    HTMLTOPDF = './wkhtmltopdf '
 
 def convert_to_pdf(fn):
         # convert to pdf using wkhtmlpdf
-        os.popen("./wkhtmltopdf static/htmls/"+fn+".html static/pdfs/"+fn+".pdf")
+        os.popen(HTMLTOPDF+" static/htmls/"+fn+".html static/pdfs/"+fn+".pdf")
 
 def callback(ch, method, properties, body):
     print " [x] Received %r" % (body,)
